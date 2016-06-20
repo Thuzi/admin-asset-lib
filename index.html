@@ -1,0 +1,372 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link href="css/bootstrap/bootstrap.css" rel="stylesheet" />
+        <link href="css/font-awesome.min.css" rel="stylesheet" />
+
+        <link rel="stylesheet/less" type="text/css" href="css/less/buttons.less" />
+        <link rel="stylesheet/less" type="text/css" href="css/less/forms.less" />
+        <link rel="stylesheet/less" type="text/css" href="css/less/grid.less" />
+        <link rel="stylesheet/less" type="text/css" href="css/less/header.less" />
+        <link rel="stylesheet/less" type="text/css" href="css/less/lists.less" />
+
+        <link rel="stylesheet/less" type="text/css" href="css/less/media.less" />
+        <link rel="stylesheet/less" type="text/css" href="css/less/nav.less" />
+        <link rel="stylesheet/less" type="text/css" href="css/less/tables.less" />
+        <link rel="stylesheet/less" type="text/css" href="css/less/tabs.less" />
+        <link rel="stylesheet/less" type="text/css" href="css/less/typography.less" />
+
+        <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.6.1/less.min.js"></script>
+
+    </head>
+    <body>
+
+        <div class="container" >
+
+            <h1>Admin Asset Lib and Style Guide</h1>
+
+            <br/>
+            <br/>
+            <h2>Buttons</h2>
+            <hr />
+            <div class="col-sm-12" >
+                <button class="btn btn-primary" type="button" >Primary</button>
+                <button class="btn btn-primary" type="button" > <i class="fa fa-plus" ></i> Add</button>
+
+                <button class="btn btn-success" type="button" >Success</button>
+                <button class="btn btn-success" type="button" > <i class="fa fa-floppy-o" ></i> Save</button>
+
+                <button class="btn btn-danger" type="button" >Danger</button>
+                <button class="btn btn-danger" type="button" > <i class="fa fa-times" ></i> Delete</button>
+            </div>
+
+
+            <br/>
+            <br/>
+            <h2>Inputs</h2>
+            <hr />
+            <div class="col-sm-12" >
+                <div class="row" >
+
+                    <div class="col-sm-6" >
+                        <div class="form-group" >
+                            <label>Search</label>
+                            <div class="search" >
+                                <input type="text" class="form-control" />
+                                <i class="fa fa-search" ></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6" >
+                        <div class="form-group" >
+                            <label>Text</label>
+                            <input type="text" class="form-control" />
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6" >
+                        <div class="form-group" >
+                            <label>Email</label>
+                            <input type="email" class="form-control" />
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6" >
+                        <div class="form-group" >
+                            <label>Password</label>
+                            <input type="password" class="form-control" />
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6" >
+                        <div class="form-group" >
+                            <div class="checkbox single-checkbox">
+                                <label>
+                                    <input type="checkbox"> Standalone Checkbox
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <br/>
+            <br/>
+            <h2>Tabs</h2>
+            <hr />
+
+
+            <ul class="nav nav-tabs">
+                <li><a href="">Photos</a></li>
+                <li class="active"><a href="">Videos</a></li>
+                <li><a href="">Audio</a></li>
+                <li><a href="">Other</a></li>
+            </ul>
+
+            <br/>
+            <br/>
+
+            <ul class="nav nav-tabs">
+                <li><a href="">Photos</a></li>
+                <li class="active"><a href="">Videos</a></li>
+                <li><a href="">Audio</a></li>
+                <li><a class="error" href="">Other (2)</a></li>
+            </ul>
+            <ul class="nav nav-tabs sub-tabs">
+                <li><a href="">Sub 1</a></li>
+                <li class="active"><a href="">Sub Item 2</a></li>
+                <li><a href="">Sub 3</a></li>
+                <li><a class="error" href="">Sub 4 (2)</a></li>
+            </ul>
+
+
+            <br/>
+            <br/>
+            <h2>List</h2>
+            <hr />
+
+            <div>
+
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <div class="row" >
+                            <div class="col-sm-6" >
+                                <div class="left-data" >
+                                    <h4>Nike Football Combine <span class="status active" > <i class="fa fa-check-circle" ></i> Active</span></h4>
+                                    <p>3/12/16 . 12:30 PM . EST  -  3/12/16 . 5:00 PM . EST</p>
+                                </div>
+                            </div>
+                            <div class="buttons col-sm-6" >
+                                <button class="pull-right btn btn-primary" type="button" >Edit</button>
+                                <button class="pull-right btn btn-primary" type="button" >Launch</button>
+                                <button class="pull-right btn btn-primary" type="button" >Metrics</button>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="list-group-item">
+                        <div class="row" >
+                            <div class="col-sm-6" >
+                                <div class="left-data" >
+                                    <h4>Nike Football Combine 2 <span class="status inactive" > <i class="fa fa-minus-circle" ></i> Inactive</span></h4>
+                                    <p>3/12/16 . 12:30 PM . EST  -  3/12/16 . 5:00 PM . EST</p>
+                                </div>
+                            </div>
+                            <div class="buttons col-sm-6" >
+                                <button class="btn btn-primary" type="button" >Edit</button>
+                                <button class="btn btn-primary" type="button" >Launch</button>
+                                <button class="btn btn-primary" type="button" >Metrics</button>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="list-group-item">
+                        <div class="row" >
+                            <div class="col-sm-6" >
+                                <div class="left-data" >
+                                    <h4>Nike Football Combine 3 <span class="status inactive" > <i class="fa fa-minus-circle" ></i> Inactive</span></h4>
+                                    <p>3/12/16 . 12:30 PM . EST  -  3/12/16 . 5:00 PM . EST</p>
+                                </div>
+                            </div>
+                            <div class="buttons col-sm-6" >
+                                <button class="btn btn-primary" type="button" >Edit</button>
+                                <button class="btn btn-primary" type="button" >Launch</button>
+                                <button class="btn btn-primary" type="button" >Metrics</button>
+                            </div>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+
+
+            <br/>
+            <br/>
+            <h2>List 3 Wide</h2>
+            <hr />
+
+            <div class="list-3-wide" >
+                <div class="item col-sm-4" >
+                    <a href="" >
+                        <img width="50px" height="50px" src="http://placehold.it/50x50">
+                        <h3>Name</h3>
+                    </a>
+                </div>
+                <div class="item col-sm-4" >
+                    <a href="" >
+                        <img width="50px" height="50px" src="http://placehold.it/50x50">
+                        <h3>Name</h3>
+                    </a>
+                </div>
+                <div class="item col-sm-4" >
+                    <a href="" >
+                        <img width="50px" height="50px" src="http://placehold.it/50x50">
+                        <h3>Name</h3>
+                    </a>
+                </div>
+                <div class="item col-sm-4" >
+                    <a href="" >
+                        <img width="50px" height="50px" src="http://placehold.it/50x50">
+                        <h3>Name</h3>
+                    </a>
+                </div>
+                <div class="item col-sm-4" >
+                    <a href="" >
+                        <img width="50px" height="50px" src="http://placehold.it/50x50">
+                        <h3>Name</h3>
+                    </a>
+                </div>
+                <div class="item col-sm-4" >
+                    <a href="" >
+                        <img width="50px" height="50px" src="http://placehold.it/50x50">
+                        <h3>Name</h3>
+                    </a>
+                </div>
+                <div class="item col-sm-4" >
+                    <a href="" >
+                        <img width="50px" height="50px" src="http://placehold.it/50x50">
+                        <h3>Name</h3>
+                    </a>
+                </div>
+                <div class="item col-sm-4" >
+                    <a href="" >
+                        <img width="50px" height="50px" src="http://placehold.it/50x50">
+                        <h3>Name</h3>
+                    </a>
+                </div>
+            </div>
+            <br/>
+            <br/>
+
+
+            <h2>Table</h2>
+            <hr />
+
+            <table class="table table-striped left-label-table" >
+                <tbody>
+                    <tr>
+                        <td>Users</td>
+                        <td>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox"> Allow
+                                </label>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox"> Allow
+                                </label>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox"> Allow
+                                </label>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox"> Allow
+                                </label>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Firewall</td>
+                        <td>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox"> Allow
+                                </label>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox"> Allow
+                                </label>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox"> Allow
+                                </label>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox"> Allow
+                                </label>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Brands</td>
+                        <td>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox"> Allow
+                                </label>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox"> Allow
+                                </label>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox"> Allow
+                                </label>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox"> Allow
+                                </label>
+                            </div>
+                        </td>
+                    </tr>
+
+                </tbody>
+                <thead>
+                    <tr>
+                        <td>Scope</td>
+                        <td>Can Create:</td>
+                        <td>Can Read:</td>
+                        <td>Can Update:</td>
+                        <td>Can Delete:</td>
+                    </tr>
+                </thead>
+            </table>
+
+
+
+            <br/>
+            <br/>
+
+        </div>
+
+    </body>
+</html>

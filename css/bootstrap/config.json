@@ -1,0 +1,32 @@
+{
+  "vars": {},
+  "css": [
+    "type.less",
+    "code.less",
+    "grid.less",
+    "tables.less",
+    "forms.less",
+    "buttons.less",
+    "responsive-utilities.less",
+    "button-groups.less",
+    "input-groups.less",
+    "navs.less",
+    "navbar.less",
+    "breadcrumbs.less",
+    "pagination.less",
+    "pager.less",
+    "labels.less",
+    "badges.less",
+    "thumbnails.less",
+    "alerts.less",
+    "progress-bars.less",
+    "media.less",
+    "list-group.less",
+    "panels.less",
+    "responsive-embed.less",
+    "wells.less",
+    "close.less"
+  ],
+  "js": [],
+  "customizerUrl": "http://getbootstrap.com/customize/?id=79f117609354262f69ddfd7ff29b5c2f"
+}
