@@ -10,6 +10,8 @@
         <link href="css/bootstrap/bootstrap.css" rel="stylesheet" />
         <link href="css/font-awesome.min.css" rel="stylesheet" />
 
+        <link rel="stylesheet/less" type="text/css" href="css/less/variables.less" />
+
         <link rel="stylesheet/less" type="text/css" href="css/less/buttons.less" />
         <link rel="stylesheet/less" type="text/css" href="css/less/forms.less" />
         <link rel="stylesheet/less" type="text/css" href="css/less/grid.less" />
@@ -31,6 +33,42 @@
 
             <h1>Admin Asset Lib and Style Guide</h1>
 
+
+            <br/>
+            <br/>
+            <h2>Colors</h2>
+            <hr />
+            <div>
+                <div class="col-sm-2" >
+                    <p class="text-center" >Nav Bar Background and Dark Text <br/> #303030</p>
+                    <div style="width: 100%; height: 50px; background: #303030" ></div>
+                </div>
+                <div class="col-sm-2" >
+                    <p class="text-center" >Primary Buttons and Active Tabs <br/> #28b4e7</p>
+                    <div style="width: 100%; height: 50px; background: #28b4e7" ></div>
+                </div>
+                <div class="col-sm-2" >
+                    <p class="text-center" >Success Buttons or Positive State <br/> #4daa4b</p>
+                    <div style="width: 100%; height: 50px; background: #4daa4b" ></div>
+                </div>
+                <div class="col-sm-2" >
+                    <p class="text-center" >Danger Buttons or Negative State <br/> #e33e23</p>
+                    <div style="width: 100%; height: 50px; background: #e33e23" ></div>
+                </div>
+                <div class="col-sm-2" >
+                    <p class="text-center" >Borders and Section Seperation <br/> #e2e2e2</p>
+                    <div style="width: 100%; height: 50px; background: #e2e2e2" ></div>
+                </div>
+                <div class="col-sm-2" >
+                    <p class="text-center" >Bread Crumb Bar and Side Nav <br/> #f1f1f1</p>
+                    <div style="width: 100%; height: 50px; background: #f1f1f1" ></div>
+                </div>
+                <!-- <div class="col-sm-2" >
+                    <p class="text-center" >Background Color and Light Text <br/> #ffffff</p>
+                    <div style="border: 1px solid #ddd; width: 100%; height: 50px; background: #ffffff" ></div>
+                </div> -->
+            </div>
+            <div class="clearfix" ></div>
             <br/>
             <br/>
             <h2>Buttons</h2>
@@ -38,6 +76,7 @@
             <div class="col-sm-12" >
                 <button class="btn btn-primary" type="button" >Primary</button>
                 <button class="btn btn-primary" type="button" > <i class="fa fa-plus" ></i> Add</button>
+                <button class="btn btn-primary btn-play" type="button" ><i class="fa fa-play" ></i></button>
 
                 <button class="btn btn-success" type="button" >Success</button>
                 <button class="btn btn-success" type="button" > <i class="fa fa-floppy-o" ></i> Save</button>
@@ -146,9 +185,9 @@
                                 </div>
                             </div>
                             <div class="buttons col-sm-6" >
-                                <button class="pull-right btn btn-primary" type="button" >Edit</button>
-                                <button class="pull-right btn btn-primary" type="button" >Launch</button>
                                 <button class="pull-right btn btn-primary" type="button" >Metrics</button>
+                                <button class="pull-right btn btn-primary" type="button" >Launch</button>
+                                <button class="pull-right btn btn-primary" type="button" >Edit</button>
                             </div>
                         </div>
                     </li>
@@ -162,9 +201,9 @@
                                 </div>
                             </div>
                             <div class="buttons col-sm-6" >
-                                <button class="btn btn-primary" type="button" >Edit</button>
-                                <button class="btn btn-primary" type="button" >Launch</button>
-                                <button class="btn btn-primary" type="button" >Metrics</button>
+                                <button class="pull-right btn btn-primary" type="button" >Metrics</button>
+                                <button class="pull-right btn btn-primary" type="button" >Launch</button>
+                                <button class="pull-right btn btn-primary" type="button" >Edit</button>
                             </div>
                         </div>
                     </li>
@@ -178,9 +217,9 @@
                                 </div>
                             </div>
                             <div class="buttons col-sm-6" >
-                                <button class="btn btn-primary" type="button" >Edit</button>
-                                <button class="btn btn-primary" type="button" >Launch</button>
-                                <button class="btn btn-primary" type="button" >Metrics</button>
+                                <button class="pull-right btn btn-primary" type="button" >Metrics</button>
+                                <button class="pull-right btn btn-primary" type="button" >Launch</button>
+                                <button class="pull-right btn btn-primary" type="button" >Edit</button>
                             </div>
                         </div>
                     </li>
@@ -251,117 +290,117 @@
             <h2>Table</h2>
             <hr />
 
-            <table class="table table-striped left-label-table" >
-                <tbody>
-                    <tr>
-                        <td>Users</td>
-                        <td>
-                            <div class="checkbox">
-                                <label>
-                                    <input type="checkbox"> Allow
-                                </label>
-                            </div>
-                        </td>
-                        <td>
-                            <div class="checkbox">
-                                <label>
-                                    <input type="checkbox"> Allow
-                                </label>
-                            </div>
-                        </td>
-                        <td>
-                            <div class="checkbox">
-                                <label>
-                                    <input type="checkbox"> Allow
-                                </label>
-                            </div>
-                        </td>
-                        <td>
-                            <div class="checkbox">
-                                <label>
-                                    <input type="checkbox"> Allow
-                                </label>
-                            </div>
-                        </td>
-                    </tr>
+            <div class="col-sm-12" >
+                <table class="table table-striped left-label-table" >
+                    <tbody>
+                        <tr>
+                            <td>Users</td>
+                            <td>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox"> Allow
+                                    </label>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox"> Allow
+                                    </label>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox"> Allow
+                                    </label>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox"> Allow
+                                    </label>
+                                </div>
+                            </td>
+                        </tr>
 
-                    <tr>
-                        <td>Firewall</td>
-                        <td>
-                            <div class="checkbox">
-                                <label>
-                                    <input type="checkbox"> Allow
-                                </label>
-                            </div>
-                        </td>
-                        <td>
-                            <div class="checkbox">
-                                <label>
-                                    <input type="checkbox"> Allow
-                                </label>
-                            </div>
-                        </td>
-                        <td>
-                            <div class="checkbox">
-                                <label>
-                                    <input type="checkbox"> Allow
-                                </label>
-                            </div>
-                        </td>
-                        <td>
-                            <div class="checkbox">
-                                <label>
-                                    <input type="checkbox"> Allow
-                                </label>
-                            </div>
-                        </td>
-                    </tr>
+                        <tr>
+                            <td>Firewall</td>
+                            <td>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox"> Allow
+                                    </label>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox"> Allow
+                                    </label>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox"> Allow
+                                    </label>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox"> Allow
+                                    </label>
+                                </div>
+                            </td>
+                        </tr>
 
-                    <tr>
-                        <td>Brands</td>
-                        <td>
-                            <div class="checkbox">
-                                <label>
-                                    <input type="checkbox"> Allow
-                                </label>
-                            </div>
-                        </td>
-                        <td>
-                            <div class="checkbox">
-                                <label>
-                                    <input type="checkbox"> Allow
-                                </label>
-                            </div>
-                        </td>
-                        <td>
-                            <div class="checkbox">
-                                <label>
-                                    <input type="checkbox"> Allow
-                                </label>
-                            </div>
-                        </td>
-                        <td>
-                            <div class="checkbox">
-                                <label>
-                                    <input type="checkbox"> Allow
-                                </label>
-                            </div>
-                        </td>
-                    </tr>
+                        <tr>
+                            <td>Brands</td>
+                            <td>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox"> Allow
+                                    </label>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox"> Allow
+                                    </label>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox"> Allow
+                                    </label>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox"> Allow
+                                    </label>
+                                </div>
+                            </td>
+                        </tr>
 
-                </tbody>
-                <thead>
-                    <tr>
-                        <td>Scope</td>
-                        <td>Can Create:</td>
-                        <td>Can Read:</td>
-                        <td>Can Update:</td>
-                        <td>Can Delete:</td>
-                    </tr>
-                </thead>
-            </table>
-
-
+                    </tbody>
+                    <thead>
+                        <tr>
+                            <td>Scope</td>
+                            <td>Can Create:</td>
+                            <td>Can Read:</td>
+                            <td>Can Update:</td>
+                            <td>Can Delete:</td>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
 
             <br/>
             <br/>

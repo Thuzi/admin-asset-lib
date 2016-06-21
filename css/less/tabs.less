@@ -1,12 +1,15 @@
+
+@import "variables";
+
 .nav-tabs {
-    border-top: 1px solid #dddddd;
-    border-bottom: 1px solid #dddddd;
-    border-right: 1px solid #dddddd;
+    border-top: 1px solid @medium-grey;
+    border-bottom: 1px solid @medium-grey;
+    border-right: 1px solid @medium-grey;
     li {
         &.active {
             a {
                 border-top-color: transparent;
-                color: #28b4e7;
+                color: @primary-blue;
             }
             &:hover {
                 border-top-color: transparent;
@@ -20,9 +23,9 @@
         a {
             border: 1px solid transparent;
             border-radius: 0;
-            color: #303030;
+            color: @dark-grey;
             &.error {
-                color: #e33e23;
+                color: @danger-red;
             }
         }
     }
@@ -31,7 +34,6 @@
 .sub-tabs {
     border-top: none;
     li {
-
         &.active {
             a {
                 border: none;
@@ -55,6 +57,4 @@
             padding: 8px 12px;
         }
     }
-
-
 }

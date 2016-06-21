@@ -1,5 +1,7 @@
-.list-group {
 
+@import "variables";
+
+.list-group {
     .list-group-item{
         padding: 17px;
         &:first-child, &:last-child {
@@ -25,27 +27,27 @@
         font-size: .7em;
     }
     .active {
-        color: #50bf48;
+        color: @success-green;
     }
     .inactive {
-        color: #e33e23;
+        color: @danger-red;
     }
 }
 
 .list-3-wide {
-    border: 1px solid #ddd;
+    border: 1px solid @medium-grey;
     border-right: none;
     border-bottom: none;
     overflow: auto;
     .item {
         padding: 0;
-        border: 1px solid #ddd;
+        border: 1px solid @medium-grey;
         border-left: none;
         border-top: none;
         a {
             display: block;
             padding: 20px;
-            color: #333;
+            color: @dark-grey;
             overflow:  auto;
         }
         img {
@@ -55,7 +57,6 @@
             float: left;
             margin: 12px 0px 0px 12px;
         }
-
         img {
             border-radius: 50px;
         }

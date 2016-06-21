@@ -1,4 +1,6 @@
 
+@import "variables";
+
 .btn {
     padding: 7px 14px;
     text-transform: uppercase;
@@ -7,40 +9,45 @@
 }
 
 .btn-primary {
-    background: #28b4e7;
+    background: @primary-blue;
     border: none;
     &:hover {
-        background: #32bff2;
+        background: @hover-blue;
     }
     &:active {
-        background: #26aedf;
+        background: @active-blue;
     }
     &:focus {
-        background: #28b4e7;
+        background: @primary-blue;
     }
     &:active:focus {
-        background: #26aedf;
+        background: @primary-blue;
     }
 }
 
 .btn-success {
-    background: #4daa4b;
+    background: @success-green;
     border: none;
     &:hover {
-        background: #52b450;
+        background: @hover-green;
     }
     &:focus {
-        background: #4daa4b;
+        background: @success-green;
     }
 }
 
 .btn-danger {
-    background: #e33e23;
+    background: @danger-red;
     border: none;
     &:hover {
-        background: #f64528;
+        background: @hover-red;
     }
     &:focus {
-        background: #e33e23;
+        background: @danger-red;
     }
+}
+
+.btn-play {
+    min-width: auto;
+    padding: 7px 11px;
 }
