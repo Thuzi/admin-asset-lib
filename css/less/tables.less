@@ -2,12 +2,49 @@
 @import "variables";
 
 .left-label-table {
+    thead {
+        font-size: .7em;
+        text-align: center;
+        td:first-child {
+            text-align: left;
+        }
+    }
     tbody {
         td:first-child {
             font-weight: 700;
-            font-size: 1.2em;
-            padding: 15px 8px 0 8px;
-
+            font-size: .9em;
+            padding: 20px 8px 0 8px;
+        }
+        .checkbox {
+            label {
+                text-align: center;
+                width: 100%;
+            }
+            span {
+                display: none;
+            }
         }
     }
+}
+
+@media (min-width: 768px) {
+
+    .left-label-table {
+        thead{
+            font-size: 1em;
+        }
+        tbody {
+            td:first-child {
+                font-weight: 700;
+                font-size: 1.2em;
+                padding: 15px 8px 0 8px;
+            }
+            .checkbox {
+                span {
+                    display: inline;
+                }
+            }
+        }
+    }
+
 }
