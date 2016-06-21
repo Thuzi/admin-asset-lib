@@ -1,0 +1,124 @@
+
+@import "variables";
+
+body {
+	height:100vh;
+	background: #f8f8f8;
+}
+
+.container {
+	position: relative;
+}
+
+.navbar {
+	background: @dark-grey;
+	color: @light-text;
+	border: none;
+	margin-bottom: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 1001;
+	.navbar-brand {
+		color: @light-text;
+	}
+	.navbar-nav {
+		li {
+			a {
+				color: @light-text;
+				text-transform: uppercase;
+			}
+		}
+	}
+}
+
+.breadcrumb-wrapper {
+	background: @light-grey;
+	border-bottom: 1px solid @medium-grey;
+	.breadcrumb {
+		background: none;
+		margin: 0;
+		padding: 5px 0;
+		float: left;
+		li {
+			a {
+				color: @dark-grey;
+				cursor: pointer;
+			}
+		}
+	}
+	a {
+		color: @dark-grey;
+		margin-top: 5px;
+		cursor: pointer;
+	}
+}
+
+.side-nav-wrapper {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: @light-grey;
+	width: 200px;
+	height: 100vh;
+    padding-top: 81px;
+	z-index: 1000;
+
+	ul {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		a {
+			padding: 10px 15px;
+			display: block;
+			text-transform: uppercase;
+			position: relative;
+			color: @dark-grey;
+			&.active {
+				background: @nav-active;
+				&::before {
+					content: "";
+					background: @primary-blue;
+					position: absolute;
+					top: 0;
+					left: 0;
+					height: 40px;
+					width: 6px;
+				}
+			}
+			&:hover {
+				text-decoration: none;
+				background: @medium-grey;
+			}
+			i {
+				padding-right: 10px;
+			}
+		}
+	}
+}
+
+.main-content {
+	background: @white-bg;
+	margin-left: 200px;
+	border-right: 1px solid @medium-grey;
+	border-left: 1px solid @medium-grey;
+	height: 100vh;
+    padding-top: 81px;
+	position: relative;
+	.scrolling-content {
+		overflow: scroll;
+		padding-bottom: 15px;
+		// height in set in the: things-that-dont-work-in-less.css
+	}
+	.fixed-top-section {
+		border-bottom: 1px solid @medium-grey;
+		padding: 15px 0;
+		position: absolute;
+		top: 81px;
+		right: 0;
+		width: 100%;
+		background: @white-bg;
+		z-index: 999;
+	}
+}

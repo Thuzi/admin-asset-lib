@@ -24,392 +24,497 @@
         <link rel="stylesheet/less" type="text/css" href="css/less/tabs.less" />
         <link rel="stylesheet/less" type="text/css" href="css/less/typography.less" />
 
+        <link rel="stylesheet" href="css/things-that-dont-work-in-less.css" />
+
         <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.6.1/less.min.js"></script>
 
     </head>
     <body>
 
+        <nav class="navbar navbar-default">
+          <div class="container">
+          <div class="col-sm-12">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <!-- <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button> -->
+              <a class="navbar-brand" href="#">Top Header</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav">
+                <!-- <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li> -->
+              </ul>
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="">Brands</a></li>
+                <li><a href="">System Settings</a></li>
+                <li><a href="">Firewall</a></li>
+              </ul>
+            </div><!-- /.navbar-collapse -->
+            </div>
+          </div><!-- /.container -->
+
+          <div class="breadcrumb-wrapper">
+              <div class="container" >
+                  <div class="col-sm-12">
+                      <ol class="breadcrumb">
+                          <li><a href="#">Home</a></li>
+                          <li><a href="#">Library</a></li>
+                          <li class="active">Data</li>
+                      </ol>
+                      <a class="pull-right" > <i class="fa fa-sign-out" ></i> Logout</a>
+                  </div>
+              </div>
+          </div>
+        </nav>
+
+
         <div class="container" >
 
-            <h1>Admin Asset Lib and Style Guide</h1>
-
-
-            <br/>
-            <br/>
-            <h2>Colors</h2>
-            <hr />
-            <div>
-                <div class="col-sm-2" >
-                    <p class="text-center" >Nav Bar Background and Dark Text <br/> #303030</p>
-                    <div style="width: 100%; height: 50px; background: #303030" ></div>
-                </div>
-                <div class="col-sm-2" >
-                    <p class="text-center" >Primary Buttons and Active Tabs <br/> #28b4e7</p>
-                    <div style="width: 100%; height: 50px; background: #28b4e7" ></div>
-                </div>
-                <div class="col-sm-2" >
-                    <p class="text-center" >Success Buttons or Positive State <br/> #4daa4b</p>
-                    <div style="width: 100%; height: 50px; background: #4daa4b" ></div>
-                </div>
-                <div class="col-sm-2" >
-                    <p class="text-center" >Danger Buttons or Negative State <br/> #e33e23</p>
-                    <div style="width: 100%; height: 50px; background: #e33e23" ></div>
-                </div>
-                <div class="col-sm-2" >
-                    <p class="text-center" >Borders and Section Seperation <br/> #e2e2e2</p>
-                    <div style="width: 100%; height: 50px; background: #e2e2e2" ></div>
-                </div>
-                <div class="col-sm-2" >
-                    <p class="text-center" >Bread Crumb Bar and Side Nav <br/> #f1f1f1</p>
-                    <div style="width: 100%; height: 50px; background: #f1f1f1" ></div>
-                </div>
-                <!-- <div class="col-sm-2" >
-                    <p class="text-center" >Background Color and Light Text <br/> #ffffff</p>
-                    <div style="border: 1px solid #ddd; width: 100%; height: 50px; background: #ffffff" ></div>
-                </div> -->
-            </div>
-            <div class="clearfix" ></div>
-            <br/>
-            <br/>
-            <h2>Buttons</h2>
-            <hr />
-            <div class="col-sm-12" >
-                <button class="btn btn-primary" type="button" >Primary</button>
-                <button class="btn btn-primary" type="button" > <i class="fa fa-plus" ></i> Add</button>
-                <button class="btn btn-primary btn-play" type="button" ><i class="fa fa-play" ></i></button>
-
-                <button class="btn btn-success" type="button" >Success</button>
-                <button class="btn btn-success" type="button" > <i class="fa fa-floppy-o" ></i> Save</button>
-
-                <button class="btn btn-danger" type="button" >Danger</button>
-                <button class="btn btn-danger" type="button" > <i class="fa fa-trash" ></i> Delete</button>
+            <div class="side-nav-wrapper">
+                <ul>
+                    <li>
+                        <a href="" class="active" ><i class="fa fa-cubes" ></i>Activations</a>
+                    </li>
+                    <li>
+                        <a href="" ><i class="fa fa-cube" ></i>Modules</a>
+                    </li>
+                    <li>
+                        <a href="" ><i class="fa fa-film" ></i>Streams</a>
+                    </li>
+                    <li>
+                        <a href="" ><i class="fa fa-users" ></i>Attendees</a>
+                    </li>
+                    <li>
+                        <a href="" ><i class="fa fa-cog" ></i>Settings</a>
+                    </li>
+                </ul>
             </div>
 
+            <div class="main-content">
 
-            <br/>
-            <br/>
-            <h2>Inputs</h2>
-            <hr />
-            <div class="col-sm-12" >
-                <div class="row" >
+                <div class="fixed-top-section">
 
-                    <div class="col-sm-6" >
-                        <div class="form-group" >
-                            <label>Search</label>
+                    <div class="col-sm-4" >
+                        <div class="form-group search-wrapper" >
                             <div class="search" >
-                                <input type="text" class="form-control" />
+                                <input type="text" class="form-control" placeholder="Fake Search" />
                                 <i class="fa fa-search" ></i>
                             </div>
                         </div>
                     </div>
-
-                    <div class="col-sm-6" >
-                        <div class="form-group" >
-                            <label>Text</label>
-                            <input type="text" class="form-control" />
-                        </div>
+                    <div class="col-sm-8" >
+                        <button class="btn btn-primary pull-right" type="button" > <i class="fa fa-plus" ></i> Example Add</button>
                     </div>
-
-                    <div class="col-sm-6" >
-                        <div class="form-group" >
-                            <label>Email</label>
-                            <input type="email" class="form-control" />
-                        </div>
-                    </div>
-
-                    <div class="col-sm-6" >
-                        <div class="form-group" >
-                            <label>Password</label>
-                            <input type="password" class="form-control" />
-                        </div>
-                    </div>
-
-                    <div class="col-sm-6" >
-                        <div class="form-group" >
-                            <div class="checkbox single-checkbox">
-                                <label>
-                                    <input type="checkbox"> Standalone Checkbox
-                                </label>
-                            </div>
-                        </div>
-                    </div>
-
                 </div>
-            </div>
+
+                <div class="scrolling-content">
 
 
-            <br/>
-            <br/>
-            <h2>Tabs</h2>
-            <hr />
 
 
-            <ul class="nav nav-tabs">
-                <li><a href="">Photos</a></li>
-                <li class="active"><a href="">Videos</a></li>
-                <li><a href="">Audio</a></li>
-                <li><a href="">Other</a></li>
-            </ul>
 
-            <br/>
-            <br/>
+                    <div class="col-sm-12">
 
-            <ul class="nav nav-tabs">
-                <li><a href="">Photos</a></li>
-                <li class="active"><a href="">Videos</a></li>
-                <li><a href="">Audio</a></li>
-                <li><a class="error" href="">Other (2)</a></li>
-            </ul>
-            <ul class="nav nav-tabs sub-tabs">
-                <li><a href="">Sub 1</a></li>
-                <li class="active"><a href="">Sub Item 2</a></li>
-                <li><a href="">Sub 3</a></li>
-                <li><a class="error" href="">Sub 4 (2)</a></li>
-            </ul>
+                        <br/>
+                        <br/>
+                        <h2 style="margin-top: 40px;" >Colors</h2>
 
-
-            <br/>
-            <br/>
-            <h2>List</h2>
-            <hr />
-
-            <div>
-
-                <ul class="list-group">
-                    <li class="list-group-item">
                         <div class="row" >
-                            <div class="col-sm-6" >
-                                <div class="left-data" >
-                                    <h4>Nike Football Combine <span class="status active" > <i class="fa fa-check-circle" ></i> Active</span></h4>
-                                    <p>3/12/16 . 12:30 PM . EST  -  3/12/16 . 5:00 PM . EST</p>
-                                </div>
+                            <div class="col-sm-4 col-md-2" >
+                                <h6 class="text-center" >Nav Bar and Dark Text <br/> #303030</h6>
+                                <div style="width: 100%; height: 60px; background: #303030" ></div>
                             </div>
-                            <div class="buttons col-sm-6" >
-                                <div class="buttons-wrapper" >
-                                    <button class="btn btn-primary" type="button" >Edit</button>
-                                    <button class="btn btn-primary" type="button" >Launch</button>
-                                    <button class="btn btn-primary" type="button" >Metrics</button>
-                                </div>
+                            <div class="col-sm-4 col-md-2" >
+                                <h6 class="text-center" >Primary Buttons and Active Tabs <br/> #28b4e7</h6>
+                                <div style="width: 100%; height: 60px; background: #28b4e7" ></div>
                             </div>
+                            <div class="col-sm-4 col-md-2" >
+                                <h6 class="text-center" >Success Buttons or Positive State <br/> #4daa4b</h6>
+                                <div style="width: 100%; height: 60px; background: #4daa4b" ></div>
+                            </div>
+                            <div class="col-sm-4 col-md-2" >
+                                <h6 class="text-center" >Danger Buttons or Negative State <br/> #e33e23</h6>
+                                <div style="width: 100%; height: 60px; background: #e33e23" ></div>
+                            </div>
+                            <div class="col-sm-4 col-md-2" >
+                                <h6 class="text-center" >Borders and Sections <br/> #e2e2e2</h6>
+                                <div style="width: 100%; height: 60px; background: #e2e2e2" ></div>
+                            </div>
+                            <div class="col-sm-4 col-md-2" >
+                                <h6 class="text-center" >Bread Crumb Bar and Side Nav <br/> #f1f1f1</h6>
+                                <div style="width: 100%; height: 60px; background: #f1f1f1" ></div>
+                            </div>
+                            <!-- <div class="col-sm-2" >
+                                <p class="text-center" >Background Color and Light Text <br/> #ffffff</p>
+                                <div style="border: 1px solid #ddd; width: 100%; height: 50px; background: #ffffff" ></div>
+                            </div> -->
                         </div>
-                    </li>
+                    </div>
+                    <!-- <div class="clearfix" ></div> -->
 
-                    <li class="list-group-item">
+                    <div class="col-sm-12">
+                        <br/>
+                        <br/>
+                        <h2>Buttons</h2>
+
+
+                        <button class="btn btn-primary" type="button" >Primary</button>
+                        <button class="btn btn-primary" type="button" > <i class="fa fa-plus" ></i> Add</button>
+                        <button class="btn btn-primary btn-play" type="button" ><i class="fa fa-play" ></i></button>
+
+                        <button class="btn btn-success" type="button" >Success</button>
+                        <button class="btn btn-success" type="button" > <i class="fa fa-floppy-o" ></i> Save</button>
+
+                        <button class="btn btn-danger" type="button" >Danger</button>
+                        <button class="btn btn-danger" type="button" > <i class="fa fa-trash" ></i> Delete</button>
+
+                    </div>
+
+                    <div class="col-sm-12">
+                        <br/>
+                        <br/>
+                        <h2>Inputs</h2>
+
+
                         <div class="row" >
+
                             <div class="col-sm-6" >
-                                <div class="left-data" >
-                                    <h4>Nike Football Combine 2 <span class="status inactive" > <i class="fa fa-minus-circle" ></i> Inactive</span></h4>
-                                    <p>3/12/16 . 12:30 PM . EST  -  3/12/16 . 5:00 PM . EST</p>
+                                <div class="form-group" >
+                                    <label>Search</label>
+                                    <div class="search" >
+                                        <input type="text" class="form-control" />
+                                        <i class="fa fa-search" ></i>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="buttons col-sm-6" >
-                                <div class="buttons-wrapper" >
-                                    <button class="btn btn-primary" type="button" >Edit</button>
-                                    <button class="btn btn-primary" type="button" >Launch</button>
-                                    <button class="btn btn-primary" type="button" >Metrics</button>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
 
-                    <li class="list-group-item">
-                        <div class="row" >
                             <div class="col-sm-6" >
-                                <div class="left-data" >
-                                    <h4>Nike Football Combine 3 <span class="status inactive" > <i class="fa fa-minus-circle" ></i> Inactive</span></h4>
-                                    <p>3/12/16 . 12:30 PM . EST  -  3/12/16 . 5:00 PM . EST</p>
+                                <div class="form-group" >
+                                    <label>Text</label>
+                                    <input type="text" class="form-control" />
                                 </div>
                             </div>
-                            <div class="buttons col-sm-6" >
-                                <div class="buttons-wrapper" >
-                                    <button class="btn btn-primary" type="button" >Edit</button>
-                                    <button class="btn btn-primary" type="button" >Launch</button>
-                                    <button class="btn btn-primary" type="button" >Metrics</button>
+
+                            <div class="col-sm-6" >
+                                <div class="form-group" >
+                                    <label>Email</label>
+                                    <input type="email" class="form-control" />
                                 </div>
                             </div>
+
+                            <div class="col-sm-6" >
+                                <div class="form-group" >
+                                    <label>Password</label>
+                                    <input type="password" class="form-control" />
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6" >
+                                <div class="form-group" >
+                                    <div class="checkbox single-checkbox">
+                                        <label>
+                                            <input type="checkbox"> Standalone Checkbox
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
-                    </li>
+                    </div>
 
-                </ul>
+
+                    <div class="col-sm-12">
+                        <br/>
+                        <br/>
+                        <h2>Tabs</h2>
+
+                    </div>
+                    <div class="clearfix" ></div>
+
+
+                    <ul class="nav nav-tabs">
+                        <li><a href="">Photos</a></li>
+                        <li class="active"><a href="">Videos</a></li>
+                        <li><a href="">Audio</a></li>
+                        <li><a href="">Other</a></li>
+                    </ul>
+
+                    <br/>
+                    <br/>
+
+                    <ul class="nav nav-tabs">
+                        <li><a href="">Photos</a></li>
+                        <li class="active"><a href="">Videos</a></li>
+                        <li><a href="">Audio</a></li>
+                        <li><a class="error" href="">Other (2)</a></li>
+                    </ul>
+                    <ul class="nav nav-tabs sub-tabs">
+                        <li><a href="">Sub 1</a></li>
+                        <li class="active"><a href="">Sub Item 2</a></li>
+                        <li><a href="">Sub 3</a></li>
+                        <li><a class="error" href="">Sub 4 (2)</a></li>
+                    </ul>
+
+                    <div class="col-sm-12">
+                        <br/>
+                        <br/>
+                        <h2>List</h2>
+
+                    </div>
+                    <div class="clearfix" ></div>
+
+                    <div>
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                <div class="row" >
+                                    <div class="col-sm-6" >
+                                        <div class="left-data" >
+                                            <h4>Nike Football Combine <span class="status active" > <i class="fa fa-check-circle" ></i> Active</span></h4>
+                                            <p>3/12/16 . 12:30 PM . EST  -  3/12/16 . 5:00 PM . EST</p>
+                                        </div>
+                                    </div>
+                                    <div class="buttons col-sm-6" >
+                                        <div class="buttons-wrapper" >
+                                            <button class="btn btn-primary" type="button" >Edit</button>
+                                            <button class="btn btn-primary" type="button" >Launch</button>
+                                            <button class="btn btn-primary" type="button" >Metrics</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="list-group-item">
+                                <div class="row" >
+                                    <div class="col-sm-6" >
+                                        <div class="left-data" >
+                                            <h4>Nike Football Combine 2 <span class="status inactive" > <i class="fa fa-minus-circle" ></i> Inactive</span></h4>
+                                            <p>3/12/16 . 12:30 PM . EST  -  3/12/16 . 5:00 PM . EST</p>
+                                        </div>
+                                    </div>
+                                    <div class="buttons col-sm-6" >
+                                        <div class="buttons-wrapper" >
+                                            <button class="btn btn-primary" type="button" >Edit</button>
+                                            <button class="btn btn-primary" type="button" >Launch</button>
+                                            <button class="btn btn-primary" type="button" >Metrics</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="list-group-item">
+                                <div class="row" >
+                                    <div class="col-sm-6" >
+                                        <div class="left-data" >
+                                            <h4>Nike Football Combine 3 <span class="status inactive" > <i class="fa fa-minus-circle" ></i> Inactive</span></h4>
+                                            <p>3/12/16 . 12:30 PM . EST  -  3/12/16 . 5:00 PM . EST</p>
+                                        </div>
+                                    </div>
+                                    <div class="buttons col-sm-6" >
+                                        <div class="buttons-wrapper" >
+                                            <button class="btn btn-primary" type="button" >Edit</button>
+                                            <button class="btn btn-primary" type="button" >Launch</button>
+                                            <button class="btn btn-primary" type="button" >Metrics</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                    <div class="col-sm-12">
+                        <br/>
+                        <br/>
+                        <h2>List 2 or more wide</h2>
+
+                    </div>
+
+                    <div class="list-3-wide" >
+                        <div class="item col-md-4 col-sm-6" >
+                            <a href="" >
+                                <img width="50px" height="50px" src="http://placehold.it/50x50">
+                                <h3>Name</h3>
+                            </a>
+                        </div>
+                        <div class="item col-md-4 col-sm-6" >
+                            <a href="" >
+                                <img width="50px" height="50px" src="http://placehold.it/50x50">
+                                <h3>Name</h3>
+                            </a>
+                        </div>
+                        <div class="item col-md-4 col-sm-6" >
+                            <a href="" >
+                                <img width="50px" height="50px" src="http://placehold.it/50x50">
+                                <h3>Name</h3>
+                            </a>
+                        </div>
+                        <div class="item col-md-4 col-sm-6" >
+                            <a href="" >
+                                <img width="50px" height="50px" src="http://placehold.it/50x50">
+                                <h3>Name</h3>
+                            </a>
+                        </div>
+                        <div class="item col-md-4 col-sm-6" >
+                            <a href="" >
+                                <img width="50px" height="50px" src="http://placehold.it/50x50">
+                                <h3>Name</h3>
+                            </a>
+                        </div>
+                        <div class="item col-md-4 col-sm-6" >
+                            <a href="" >
+                                <img width="50px" height="50px" src="http://placehold.it/50x50">
+                                <h3>Name</h3>
+                            </a>
+                        </div>
+                        <div class="item col-md-4 col-sm-6" >
+                            <a href="" >
+                                <img width="50px" height="50px" src="http://placehold.it/50x50">
+                                <h3>Name</h3>
+                            </a>
+                        </div>
+                        <div class="item col-md-4 col-sm-6" >
+                            <a href="" >
+                                <img width="50px" height="50px" src="http://placehold.it/50x50">
+                                <h3>Name</h3>
+                            </a>
+                        </div>
+                    </div>
+
+
+                    <div class="col-sm-12">
+                        <br/>
+                        <br/>
+                        <h2>Table</h2>
+
+                    </div>
+
+                    <div class="col-sm-12" >
+                        <table class="table table-striped left-label-table" >
+                            <tbody>
+                                <tr>
+                                    <td>Users</td>
+                                    <td>
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox"> <span>Allow</span>
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox"> <span>Allow</span>
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox"> <span>Allow</span>
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox"> <span>Allow</span>
+                                            </label>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>Firewall</td>
+                                    <td>
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox"> <span>Allow</span>
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox"> <span>Allow</span>
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox"> <span>Allow</span>
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox"> <span>Allow</span>
+                                            </label>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>Brands</td>
+                                    <td>
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox"> <span>Allow</span>
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox"> <span>Allow</span>
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox"> <span>Allow</span>
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox"> <span>Allow</span>
+                                            </label>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                            <thead>
+                                <tr>
+                                    <td>Scope</td>
+                                    <td>Created</td>
+                                    <td>Read</td>
+                                    <td>Update</td>
+                                    <td>Delete</td>
+                                </tr>
+                            </thead>
+                        </table>
+                    </div>
+
+
+
+
+
+
+
+                </div>
+
             </div>
-
-
-            <br/>
-            <br/>
-            <h2>List 3 Wide</h2>
-            <hr />
-
-            <div class="list-3-wide" >
-                <div class="item col-sm-4" >
-                    <a href="" >
-                        <img width="50px" height="50px" src="http://placehold.it/50x50">
-                        <h3>Name</h3>
-                    </a>
-                </div>
-                <div class="item col-sm-4" >
-                    <a href="" >
-                        <img width="50px" height="50px" src="http://placehold.it/50x50">
-                        <h3>Name</h3>
-                    </a>
-                </div>
-                <div class="item col-sm-4" >
-                    <a href="" >
-                        <img width="50px" height="50px" src="http://placehold.it/50x50">
-                        <h3>Name</h3>
-                    </a>
-                </div>
-                <div class="item col-sm-4" >
-                    <a href="" >
-                        <img width="50px" height="50px" src="http://placehold.it/50x50">
-                        <h3>Name</h3>
-                    </a>
-                </div>
-                <div class="item col-sm-4" >
-                    <a href="" >
-                        <img width="50px" height="50px" src="http://placehold.it/50x50">
-                        <h3>Name</h3>
-                    </a>
-                </div>
-                <div class="item col-sm-4" >
-                    <a href="" >
-                        <img width="50px" height="50px" src="http://placehold.it/50x50">
-                        <h3>Name</h3>
-                    </a>
-                </div>
-                <div class="item col-sm-4" >
-                    <a href="" >
-                        <img width="50px" height="50px" src="http://placehold.it/50x50">
-                        <h3>Name</h3>
-                    </a>
-                </div>
-                <div class="item col-sm-4" >
-                    <a href="" >
-                        <img width="50px" height="50px" src="http://placehold.it/50x50">
-                        <h3>Name</h3>
-                    </a>
-                </div>
-            </div>
-            <br/>
-            <br/>
-
-
-            <h2>Table</h2>
-            <hr />
-
-            <div class="col-sm-12" >
-                <table class="table table-striped left-label-table" >
-                    <tbody>
-                        <tr>
-                            <td>Users</td>
-                            <td>
-                                <div class="checkbox">
-                                    <label>
-                                        <input type="checkbox"> <span>Allow</span>
-                                    </label>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="checkbox">
-                                    <label>
-                                        <input type="checkbox"> <span>Allow</span>
-                                    </label>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="checkbox">
-                                    <label>
-                                        <input type="checkbox"> <span>Allow</span>
-                                    </label>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="checkbox">
-                                    <label>
-                                        <input type="checkbox"> <span>Allow</span>
-                                    </label>
-                                </div>
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td>Firewall</td>
-                            <td>
-                                <div class="checkbox">
-                                    <label>
-                                        <input type="checkbox"> <span>Allow</span>
-                                    </label>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="checkbox">
-                                    <label>
-                                        <input type="checkbox"> <span>Allow</span>
-                                    </label>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="checkbox">
-                                    <label>
-                                        <input type="checkbox"> <span>Allow</span>
-                                    </label>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="checkbox">
-                                    <label>
-                                        <input type="checkbox"> <span>Allow</span>
-                                    </label>
-                                </div>
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td>Brands</td>
-                            <td>
-                                <div class="checkbox">
-                                    <label>
-                                        <input type="checkbox"> <span>Allow</span>
-                                    </label>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="checkbox">
-                                    <label>
-                                        <input type="checkbox"> <span>Allow</span>
-                                    </label>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="checkbox">
-                                    <label>
-                                        <input type="checkbox"> <span>Allow</span>
-                                    </label>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="checkbox">
-                                    <label>
-                                        <input type="checkbox"> <span>Allow</span>
-                                    </label>
-                                </div>
-                            </td>
-                        </tr>
-
-                    </tbody>
-                    <thead>
-                        <tr>
-                            <td>Scope</td>
-                            <td>Created</td>
-                            <td>Read</td>
-                            <td>Update</td>
-                            <td>Delete</td>
-                        </tr>
-                    </thead>
-                </table>
-            </div>
-
-            <br/>
-            <br/>
 
         </div>
 

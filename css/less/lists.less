@@ -4,6 +4,9 @@
 .list-group {
     .list-group-item{
         padding: 17px;
+        border-color: @medium-grey;
+        border-left: none;
+        border-right: none;
         &:first-child, &:last-child {
             border-radius: 0;
         }
@@ -19,13 +22,14 @@
         .buttons {
             margin-top: 15px;
             .btn {
-                // margin-left: 2px;
                 margin-bottom: 5px;
             }
         }
     }
     .status {
         font-size: .7em;
+        display: block;
+        margin: 4px 0 4px 0;
     }
     .active {
         color: @success-green;
@@ -36,7 +40,7 @@
 }
 
 .list-3-wide {
-    overflow: auto;
+    // overflow: auto;
     .item {
         padding: 0;
         border: 1px solid @medium-grey;
@@ -67,9 +71,9 @@
 @media (min-width: 768px) {
 
     .list-3-wide {
-        border: 1px solid @medium-grey;
-        border-right: none;
-        border-bottom: none;
+        // border: 1px solid @medium-grey;
+        // border-right: none;
+        // border-bottom: none;
         .item {
             padding: 0;
             border: 1px solid @medium-grey;
@@ -96,7 +100,11 @@
                 }
             }
         }
-
+        .status {
+            font-size: .7em;
+            display: inline;
+            margin: 0;
+        }
     }
 
 }
