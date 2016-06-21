@@ -17,9 +17,10 @@
             }
         }
         .buttons {
+            margin-top: 15px;
             .btn {
-                margin-left: 10px;
-                float: right;
+                // margin-left: 2px;
+                margin-bottom: 5px;
             }
         }
     }
@@ -35,15 +36,14 @@
 }
 
 .list-3-wide {
-    border: 1px solid @medium-grey;
-    border-right: none;
-    border-bottom: none;
     overflow: auto;
     .item {
         padding: 0;
         border: 1px solid @medium-grey;
-        border-left: none;
         border-top: none;
+        &:first-child {
+            border-top: 1px solid @medium-grey;
+        }
         a {
             display: block;
             padding: 20px;
@@ -54,6 +54,7 @@
             float: left;
         }
         h3 {
+            font-size: 1.5em;
             float: left;
             margin: 12px 0px 0px 12px;
         }
@@ -61,4 +62,37 @@
             border-radius: 50px;
         }
     }
+}
+
+@media (min-width: 768px) {
+
+    .list-3-wide {
+        border: 1px solid @medium-grey;
+        border-right: none;
+        border-bottom: none;
+        .item {
+            padding: 0;
+            border: 1px solid @medium-grey;
+            border-left: none;
+            border-top: none;
+            &:first-child {
+                border-top: none;
+            }
+            h3 {
+                font-size: 1.6em;
+            }
+        }
+    }
+
+    .list-group {
+        .list-group-item{
+            .buttons {
+                .buttons-wrapper {
+                    float: right;
+                }
+            }
+        }
+
+    }
+
 }
