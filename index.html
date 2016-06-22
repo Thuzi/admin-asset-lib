@@ -11,6 +11,7 @@
         <link href="css/font-awesome.min.css" rel="stylesheet" />
 
         <link rel="stylesheet/less" type="text/css" href="css/less/variables.less" />
+        <link rel="stylesheet/less" type="text/css" href="css/less/bs-overrides.less" />
 
         <link rel="stylesheet/less" type="text/css" href="css/less/buttons.less" />
         <link rel="stylesheet/less" type="text/css" href="css/less/forms.less" />
@@ -34,7 +35,7 @@
         <nav class="navbar navbar-default">
             <div class="container">
                 <div class="col-sm-12">
-            <!-- Brand and toggle get grouped for better mobile display -->
+                    <!-- Brand and toggle get grouped for better mobile display -->
                     <div class="navbar-header">
                         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                             <span class="sr-only">Toggle navigation</span>
@@ -51,7 +52,7 @@
                           <!-- <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li> -->
                         </ul>
                         <div class="pull-right nav-select">
-                            Firstname Lastname | Brand Name <img width="50" height="50" src="http://placehold.it/50x50" />
+                            Captain Deadpool | Brand Name <img width="50" height="50" src="images/user.png" />
                         </div>
                         <ul class="nav navbar-nav navbar-right">
                             <li><a href="">Brands</a></li>
@@ -101,7 +102,7 @@
                 </ul>
             </div>
 
-            <div class="main-content">
+            <div class="main-content"> <!-- add the class "no-nav" if you want it to expand the view width of the container -->
 
                 <div class="fixed-top-section">
 
@@ -116,11 +117,18 @@
                     <div class="col-xs-6 col-sm-6 col-md-8" >
                         <button class="btn btn-primary pull-right" type="button" > <i class="fa fa-plus" ></i> Example Add</button>
                     </div>
+
+                    <div class="clearfix"></div> <!-- this also has the bottom border attached to it -->
+
+                    <!-- <ul class="nav nav-tabs">
+                        <li class="active" ><a href="">Fake Tab 1</a></li>
+                        <li><a href="">Fake Tab 2</a></li>
+                        <li><a href="">Fake Tab 3</a></li>
+                    </ul> -->
+
                 </div>
 
                 <div class="scrolling-content">
-
-
 
 
 
@@ -128,7 +136,7 @@
 
                         <br/>
                         <br/>
-                        <h2 style="margin-top: 40px;" >Colors</h2>
+                        <h2 style="margin-top: 60px;" >Colors</h2>
 
                         <div class="row" >
                             <div class="col-sm-4 col-md-2" >
@@ -136,15 +144,15 @@
                                 <div style="width: 100%; height: 60px; background: #303030" ></div>
                             </div>
                             <div class="col-sm-4 col-md-2" >
-                                <h6 class="text-center" >Primary Buttons and Active Tabs <br/> #28b4e7</h6>
+                                <h6 class="text-center" >Primary Blue <br/> #28b4e7</h6>
                                 <div style="width: 100%; height: 60px; background: #28b4e7" ></div>
                             </div>
                             <div class="col-sm-4 col-md-2" >
-                                <h6 class="text-center" >Success Buttons or Positive State <br/> #4daa4b</h6>
+                                <h6 class="text-center" >Success Green<br/> #4daa4b</h6>
                                 <div style="width: 100%; height: 60px; background: #4daa4b" ></div>
                             </div>
                             <div class="col-sm-4 col-md-2" >
-                                <h6 class="text-center" >Danger Buttons or Negative State <br/> #e33e23</h6>
+                                <h6 class="text-center" >Danger Red <br/> #e33e23</h6>
                                 <div style="width: 100%; height: 60px; background: #e33e23" ></div>
                             </div>
                             <div class="col-sm-4 col-md-2" >
@@ -152,13 +160,9 @@
                                 <div style="width: 100%; height: 60px; background: #e2e2e2" ></div>
                             </div>
                             <div class="col-sm-4 col-md-2" >
-                                <h6 class="text-center" >Bread Crumb Bar and Side Nav <br/> #f1f1f1</h6>
+                                <h6 class="text-center" >Side Nav/Breadcrumbs <br/> #f1f1f1</h6>
                                 <div style="width: 100%; height: 60px; background: #f1f1f1" ></div>
                             </div>
-                            <!-- <div class="col-sm-2" >
-                                <p class="text-center" >Background Color and Light Text <br/> #ffffff</p>
-                                <div style="border: 1px solid #ddd; width: 100%; height: 50px; background: #ffffff" ></div>
-                            </div> -->
                         </div>
                     </div>
                     <!-- <div class="clearfix" ></div> -->
