@@ -22,13 +22,37 @@ body {
 	z-index: 1001;
 	.navbar-brand {
 		color: @light-text;
+		font-size: 0;
+		background: url(../../images/logo.png) no-repeat;
+		width: 65px;
+		height: 25px;
+		background-size: 65px 25px;
+		margin: 10px 0px;
 	}
 	.navbar-nav {
+		display: none;
 		li {
 			a {
+				transition: @button-and-link-animation;
 				color: @light-text;
 				text-transform: uppercase;
+				&:hover {
+					color: @primary-blue;
+				}
 			}
+		}
+	}
+}
+
+@media (min-width: 768px) {
+	.navbar {
+		.container {
+			.navbar-brand {
+		    	margin-left: 0px;
+			}
+		}
+		.navbar-nav {
+			display: block;
 		}
 	}
 }
@@ -49,6 +73,7 @@ body {
 		}
 	}
 	a {
+		transition: @button-and-link-animation;
 		color: @dark-grey;
 		margin-top: 5px;
 		cursor: pointer;
@@ -64,12 +89,13 @@ body {
 	height: 100vh;
     padding-top: 81px;
 	z-index: 1000;
-
+	border-left: 1px solid @medium-grey;
 	ul {
 		list-style: none;
 		padding: 0;
 		margin: 0;
 		a {
+			transition: @button-and-link-animation;
 			padding: 10px 15px;
 			display: block;
 			text-transform: uppercase;
