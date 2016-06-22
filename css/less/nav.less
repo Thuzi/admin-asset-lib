@@ -10,80 +10,6 @@ body {
 	position: relative;
 }
 
-.navbar {
-	background: @dark-grey;
-	color: @light-text;
-	border: none;
-	margin-bottom: 0;
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	z-index: 1001;
-	border-radius: 0;
-	.navbar-brand {
-		color: @light-text;
-		font-size: 0;
-		background: url(../../images/logo.png) no-repeat;
-		width: 65px;
-		height: 25px;
-		background-size: 65px 25px;
-		margin: 10px auto;
-		display: block;
-		float: none;
-	}
-	.navbar-nav {
-		display: none;
-		li {
-			a {
-				transition: @button-and-link-animation;
-				color: @light-text;
-				text-transform: uppercase;
-				&:hover {
-					color: @primary-blue;
-				}
-			}
-		}
-	}
-	.navbar-toggle {
-	    float: left;
-		color: @light-text;
-		border: none;
-		&:hover {
-			background: transparent;
-		}
-		&:focus {
-			background: transparent;
-		}
-		.icon-bar {
-			background-color: @light-text;
-		}
-	}
-}
-
-.breadcrumb-wrapper {
-	background: @light-grey;
-	border-bottom: 1px solid @medium-grey;
-	.breadcrumb {
-		background: none;
-		margin: 0;
-		padding: 5px 0;
-		float: left;
-		li {
-			a {
-				color: @dark-grey;
-				cursor: pointer;
-			}
-		}
-	}
-	a {
-		transition: @button-and-link-animation;
-		color: @dark-grey;
-		margin-top: 5px;
-		cursor: pointer;
-	}
-}
-
 .side-nav-wrapper {
 	position: absolute;
 	top: 0;
@@ -159,17 +85,7 @@ body {
 	.main-content {
 		margin-left: 200px;
 	}
-	.navbar {
-		.container {
-			.navbar-brand {
-				margin: 10px 0px;
-		    	float: left;
-			}
-		}
-		.navbar-nav {
-			display: block;
-		}
-	}
+
 	.side-nav-wrapper {
 		display: block;
 	}
