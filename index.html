@@ -30,7 +30,7 @@
         <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.6.1/less.min.js"></script>
 
     </head>
-    <body>
+    <body ng-app="App" >
 
         <nav class="navbar navbar-default">
             <div class="container">
@@ -48,11 +48,11 @@
 
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                        <ul class="nav navbar-nav">
-                          <!-- <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li> -->
-                        </ul>
+
                         <div class="pull-right nav-select">
-                            Captain Deadpool | Brand Name <img width="50" height="50" src="images/user.png" />
+                            <div>
+                                Captain Deadpool | Brand Name <img width="50" height="50" src="images/user.png" />
+                            </div>
                         </div>
                         <ul class="nav navbar-nav navbar-right">
                             <li><a href="">Brands</a></li>
@@ -115,7 +115,7 @@
                         </div>
                     </div>
                     <div class="col-xs-6 col-sm-6 col-md-8" >
-                        <button class="btn btn-primary pull-right" type="button" > <i class="fa fa-plus" ></i> Example Add</button>
+                        <button class="btn btn-success pull-right" type="button" > <i class="fa fa-plus" ></i> Example Add</button>
                     </div>
 
                     <div class="clearfix"></div> <!-- this also has the bottom border attached to it -->
@@ -173,7 +173,6 @@
                         <h2>Buttons</h2>
 
                         <button class="btn btn-primary" type="button" >Primary</button>
-                        <button class="btn btn-primary" type="button" > <i class="fa fa-plus" ></i> Add</button>
                         <button class="btn btn-primary btn-play" type="button" ><i class="fa fa-play" ></i></button>
 
                         <button class="btn btn-success" type="button" >Success</button>
@@ -565,6 +564,11 @@
             </div>
 
         </div>
+
+        <script src="bower_components/angular/angular.js" ></script>
+        <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js" ></script>
+
+        <script src="demo/js/app/app.js" ></script>
 
     </body>
 </html>
