@@ -107,7 +107,7 @@
 
                     <div class="col-xs-6 col-sm-6 col-md-4" >
                         <div class="form-group search-wrapper" >
-                            <div class="search" >
+                            <div class="with-icon" >
                                 <input type="text" class="form-control" placeholder="Fake Search" />
                                 <i class="fa fa-search" ></i>
                             </div>
@@ -188,43 +188,83 @@
 
                         <div class="row" >
 
-                            <div class="col-sm-6" >
+                            <div class="col-sm-4" >
                                 <div class="form-group" >
                                     <label>Search</label>
-                                    <div class="search" >
+                                    <div class="with-icon" >
                                         <input type="text" class="form-control" />
                                         <i class="fa fa-search" ></i>
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="col-sm-6" >
+                            <div class="col-sm-4" >
                                 <div class="form-group" >
-                                    <label>Text</label>
+                                    <label>Text (not required)</label>
                                     <input type="text" class="form-control" />
                                 </div>
                             </div>
 
-                            <div class="col-sm-6" >
-                                <div class="form-group" >
-                                    <label>Email</label>
-                                    <input type="email" class="form-control" />
-                                </div>
-                            </div>
-
-                            <div class="col-sm-6" >
-                                <div class="form-group" >
-                                    <label>Password</label>
-                                    <input type="password" class="form-control" />
-                                </div>
-                            </div>
-
-                            <div class="col-sm-6" >
+                            <div class="col-sm-4" >
                                 <div class="form-group" >
                                     <div class="checkbox single-checkbox">
                                         <label>
                                             <input type="checkbox"> Standalone Checkbox
                                         </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6" >
+                                <div class="form-group" >
+                                    <label>Text (required/valid)</label>
+                                    <div class="with-icon" >
+                                        <input type="text" class="form-control" value="Hello" />
+                                        <i class="fa fa-check-circle" ></i>
+                                    </div>
+                                    <div class="error-wrapper" >
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6" >
+                                <div class="form-group" >
+                                    <label>Text (required/invalid)</label>
+                                    <div class="with-icon" >
+                                        <input type="text" class="form-control" />
+                                        <i class="fa fa-exclamation-circle" ></i>
+                                    </div>
+                                    <div class="error-wrapper" >
+                                        Required
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6" >
+                                <div class="form-group" >
+                                    <label>Text (required/disabled)</label>
+                                    <div class="with-icon" >
+                                        <input type="text" disabled class="form-control" value="Hello" />
+                                        <i class="fa fa-circle" ></i>
+                                    </div>
+                                    <div class="error-wrapper" >
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6" >
+                                <div class="form-group with-checkbox" >
+                                    <div class="checkbox">
+                                        <label>
+                                            <input checked type="checkbox"> Enable Field Name
+                                        </label>
+                                    </div>
+                                    <div class="with-icon" >
+                                        <input type="text" class="form-control" />
+                                        <i class="fa fa-exclamation-circle" ></i>
+                                    </div>
+                                    <div class="error-wrapper" >
+                                        Required
                                     </div>
                                 </div>
                             </div>

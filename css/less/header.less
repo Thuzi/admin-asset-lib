@@ -34,6 +34,7 @@
 				transition: @button-and-link-animation;
 				color: @light-text;
 				text-transform: uppercase;
+				padding: 15px 15px 15px 8px;
 				&:hover {
 					color: @primary-blue;
 				}
@@ -55,12 +56,12 @@
 		}
 	}
 	.nav-select {
+		display: none;
 		cursor: pointer;
 		background: @nav-select-grey;
 		margin-right: -15px;
 		padding-left: 15px;
 		margin-left: 15px;
-
 		img {
 			margin-left: 15px;
 		}
@@ -91,6 +92,7 @@
 }
 
 @media (min-width: 768px) {
+
 	.navbar {
 		.container {
 			.navbar-brand {
@@ -101,5 +103,9 @@
 		.navbar-nav {
 			display: block;
 		}
+		.nav-select {
+			display: block;
+		}
 	}
+
 }
