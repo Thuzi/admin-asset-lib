@@ -1,6 +1,12 @@
 
 @import "variables";
 
+.scrolling-content {
+    .nav-tabs {
+        border-bottom: none;
+    }
+}
+
 .nav-tabs {
     // border-top: 1px solid @medium-grey;
     border-bottom: 1px solid @medium-grey;
@@ -9,9 +15,24 @@
             a {
                 border-top-color: transparent;
                 color: @primary-blue;
+                &:hover {
+                    border-top: none;
+                    border-bottom: none;
+                    color: @primary-blue;
+                    margin-top: 2px;
+                }
+                &:focus{
+                    border-top: none;
+                    color: @primary-blue;
+                    margin-top: 1px;
+                }
+                &:hover:focus {
+                    color: @primary-blue;
+                }
             }
             &:hover {
                 border-top-color: transparent;
+
             }
         }
         &:first-child {
@@ -46,7 +67,6 @@
                     height: 0;
                     position: absolute;
                     bottom: -11px;
-                    left: calc(50% - 5px);
                     border-left: 10px solid transparent;
                     border-right: 10px solid transparent;
                     border-top: 10px solid #ddd;
@@ -59,4 +79,9 @@
             font-weight: 600;
         }
     }
+}
+
+.tab-pane {
+    padding-top: 25px;
+    padding-bottom: 15px;
 }

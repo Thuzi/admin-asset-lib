@@ -1,0 +1,81 @@
+
+
+<!-- insert the context of nav as needed -->
+<div ng-include="'../templates/nav.html'"></div>
+
+<div class="main-content"> <!-- add the class "no-nav" if you want it to expand the view width of the container -->
+
+	<div class="fixed-top-section">
+
+		<div class="col-xs-6 col-sm-6 col-md-4" >
+			<div class="form-group search-wrapper" >
+				<div class="with-icon" >
+					<input type="text" class="form-control" placeholder="Fake Search" />
+					<i class="fa fa-search" ></i>
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-6 col-sm-6 col-md-8" >
+			<button class="btn btn-success pull-right" type="button" > <i class="fa fa-plus" ></i> Example Add</button>
+		</div>
+
+		<div class="clearfix"></div> <!-- this also has the bottom border attached to it -->
+
+		<ul class="nav nav-tabs">
+			<li ng-class="{ active: activeTab == 0 }" ><a ng-click="activeTab = 0" href="">Photos</a></li>
+			<li ng-class="{ active: activeTab == 1 }" ><a ng-click="activeTab = 1" href="">Videos</a></li>
+			<li ng-class="{ active: activeTab == 2 }" ><a ng-click="activeTab = 2" href="">Audio</a></li>
+		</ul>
+
+		<ul ng-if="activeTab == 0" class="nav nav-tabs sub-tabs">
+			<li ng-class="{ active: subActiveTab0 == 0 }" ><a ng-click="subActiveTab0 = 0" href="">Photo Sub 1</a></li>
+			<li ng-class="{ active: subActiveTab0 == 1 }" ><a ng-click="subActiveTab0 = 1" href="">Photo Sub 2</a></li>
+			<li ng-class="{ active: subActiveTab0 == 2 }" ><a ng-click="subActiveTab0 = 2" href="">Photo Sub 3</a></li>
+		</ul>
+
+	</div>
+
+	<div class="scrolling-content">
+
+		<div style="margin-top: 73px;" ></div>
+
+		<uib-tabset active="activeTab" >
+
+			<uib-tab index="0">
+		    	<!-- tab header is remove in "fixed" section above -->
+				<uib-tabset active="subActiveTab0" >
+
+					<uib-tab index="0">
+						<div class="col-sm-12">
+							Photo Sub 1 Data
+						</div>
+					</uib-tab>
+					<uib-tab index="1">
+						<div class="col-sm-12">
+							Photo Sub 2 Data
+						</div>
+					</uib-tab>
+
+				</uib-tabset>
+
+		    </uib-tab>
+
+			<uib-tab index="1">
+		    	<!-- tab header is remove in "fixed" section above -->
+ 				<div class="col-sm-12">
+					I've got an HTML heading, and a select callback. Pretty cool 1!
+				</div>
+		    </uib-tab>
+
+			<uib-tab index="2">
+		    	<!-- tab header is remove in "fixed" section above -->
+				<div class="col-sm-12">
+					Number 3
+				</div>
+		    </uib-tab>
+
+		</uib-tabset>
+
+
+	</div>
+</div>

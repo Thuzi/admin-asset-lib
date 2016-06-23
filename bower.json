@@ -16,9 +16,14 @@
     "tests"
   ],
   "dependencies": {
-    "angular": "angularjs#^1.5.7",
-    "ui-bootstrap": "angular-ui-bootstrap#^1.3.3",
-    "angular-bootstrap": "^1.3.3",
-    "angular-route": "^1.5.7"
+    "angular": "1.5.3",
+    "ui-bootstrap": "angular-ui-bootstrap#1.3.3",
+    "angular-bootstrap": "1.3.3",
+    "angular-route": "1.5.3",
+    "angular-animate": "1.5.3"
+  },
+  "resolutions": {
+    "angular-route": "1.5.3",
+    "angular-animate": "1.5.3"
   }
 }

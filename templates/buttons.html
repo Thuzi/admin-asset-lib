@@ -1,0 +1,44 @@
+
+<!-- insert the context of nav as needed -->
+<div ng-include="'../templates/nav.html'"></div>
+
+<div class="main-content"> <!-- add the class "no-nav" if you want it to expand the view width of the container -->
+
+	<div class="fixed-top-section">
+
+		<div class="col-xs-6 col-sm-6 col-md-4" >
+			<div class="form-group search-wrapper" >
+				<div class="with-icon" >
+					<input type="text" class="form-control" placeholder="Fake Search" />
+					<i class="fa fa-search" ></i>
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-6 col-sm-6 col-md-8" >
+			<button class="btn btn-success pull-right" type="button" > <i class="fa fa-plus" ></i> Example Add</button>
+		</div>
+
+		<div class="clearfix"></div> <!-- this also has the bottom border attached to it -->
+
+	</div>
+
+	<div class="scrolling-content">
+
+		<div class="col-sm-12">
+			<h2 style="margin-top: 80px;" >Buttons</h2>
+
+			<button class="btn btn-primary" type="button" >Primary</button>
+			<button class="btn btn-primary btn-play" type="button" ><i class="fa fa-play" ></i></button>
+
+			<button class="btn btn-success" type="button" >Success</button>
+			<button class="btn btn-success" type="button" > <i class="fa fa-floppy-o" ></i> Save</button>
+
+			<button class="btn btn-danger" type="button" >Danger</button>
+			<button class="btn btn-danger" type="button" > <i class="fa fa-trash" ></i> Delete</button>
+
+		</div>
+
+
+	</div>
+
+</div>
