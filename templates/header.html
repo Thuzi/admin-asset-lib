@@ -4,28 +4,54 @@
 		<div class="col-sm-12">
 			<!-- Brand and toggle get grouped for better mobile display -->
 			<div class="navbar-header">
-				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-					<span class="sr-only">Toggle navigation</span>
+
+				<!-- <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+				<label for="nav-trigger">
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
-				</button>
+				</label> -->
+
 				<a class="navbar-brand" href="">Top Header</a>
 			</div>
 
 			<!-- Collect the nav links, forms, and other content for toggling -->
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
-				<div class="pull-right nav-select">
-					<div>
-						Captain Deadpool | Brand Name <img width="50" height="50" src="images/user.png" />
-					</div>
-				</div>
+				<div class="pull-right nav-select btn-group" uib-dropdown dropdown-append-to-body>
+				 	<button id="btn-append-to-body" type="button" class="btn btn-primary" uib-dropdown-toggle>
+				 		Captain Deadpool | Brand Name <img width="50" height="50" src="images/user.png" />
+				 	</button>
+				 	<ul class="dropdown-menu dropdown-menu-right" uib-dropdown-menu role="menu" aria-labelledby="btn-append-to-body">
+				   		<li role="menuitem">
+							<a href="">
+								<span>Brand Name</span> <img class="pull-right" width="50" height="50" src="images/user.png" />
+							</a>
+						</li>
+						<li role="menuitem">
+							<a href="">
+								<span>Brand Name</span> <img class="pull-right" width="50" height="50" src="images/user.png" />
+							</a>
+						</li>
+						<li role="menuitem">
+							<a href="">
+								<span>Brand Name</span> <img class="pull-right" width="50" height="50" src="images/user.png" />
+							</a>
+						</li>
+						<li role="menuitem">
+							<a href="">
+								<span>Brand Name</span> <img class="pull-right" width="50" height="50" src="images/user.png" />
+							</a>
+						</li>
+				 	</ul>
+			   </div>
+
 				<ul class="nav navbar-nav navbar-right">
 					<li><a href="">Brands</a></li>
 					<li><a href="">System Settings</a></li>
 					<li><a href="">Firewall</a></li>
 				</ul>
+
 			</div>
 
 		</div>

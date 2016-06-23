@@ -1,0 +1,45 @@
+
+@import "variables";
+
+.container {
+	position: relative;
+	padding-left: 0;
+    padding-right: 0;
+}
+.main-content {
+	background: @white-bg;
+	margin-left: 0;
+	border-right: 1px solid @medium-grey;
+	border-left: 1px solid @medium-grey;
+	height: 100vh;
+    padding-top: 81px;
+	position: relative;
+	.scrolling-content {
+		overflow-x: scroll;
+		// height in set in the: things-that-dont-work-in-less.css
+	}
+	.fixed-top-section {
+		padding: 15px 0 0 0;
+		position: absolute;
+		top: 80px;
+		right: 0;
+		width: 100%;
+		background: @white-bg;
+		z-index: 999;
+		.clearfix {
+			border-bottom: 1px solid @medium-grey;
+			padding-bottom: 15px;
+		}
+	}
+}
+
+@media (min-width: 768px) {
+
+	.main-content {
+		margin-left: 200px;
+		&.no-nav {
+			margin-left: 0;
+		}
+	}
+
+}
