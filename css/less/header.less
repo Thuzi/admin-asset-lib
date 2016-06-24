@@ -39,6 +39,9 @@
 				&:hover {
 					color: @primary-blue;
 				}
+				&:focus {
+					color: @light-text;
+				}
 			}
 		}
 	}
@@ -103,6 +106,14 @@
 		padding: 5px 0;
 		float: left;
 		li {
+			// display: none;
+			// &:nth-last-child(2) {
+			// 	display: inline;
+			// 	&:before {
+			// 		content: "\2039";
+			// 		color: #000;
+			// 	}
+			// }
 			a {
 				color: @dark-grey;
 				cursor: pointer;
@@ -120,6 +131,17 @@
 @media (min-width: 768px) {
 
 	.breadcrumb-wrapper {
+		// .breadcrumb {
+		// 	li {
+		// 		display: inline;
+		// 		// &:nth-last-child(2) {
+		// 		// 	&:before {
+		// 		// 		content: "/\00a0";
+		// 		// 		color: #cccccc;
+		// 		// 	}
+		// 		// }
+		// 	}
+		// }
 		.desktop-logout {
 			display: inline;
 		}
