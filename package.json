@@ -1,0 +1,13 @@
+{
+  "name": "angular",
+  "version": "0.1",
+  "description": "Admin Asset Lib Style Guide",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:Thuzi/admin-asset-lib-style-guide.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Thuzi/admin-asset-lib-style-guide/issues"
+  },
+  "homepage": "https://github.com/Thuzi/admin-asset-lib-style-guide"
+}
