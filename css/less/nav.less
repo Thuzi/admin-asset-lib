@@ -37,6 +37,17 @@ label[for="nav-trigger"] {
 	border-left: 1px solid @medium-grey;
 	left: -100%;
 	transition: left 0.2s;
+	.mobile-links {
+		background: @white-bg;
+		border-top: 1px solid @medium-grey;
+		border-bottom: 1px solid @medium-grey;
+		a {
+			text-transform: none;
+			&.last-item {
+				border-top: 1px solid @medium-grey;
+			}
+		}
+	}
 	ul {
 		list-style: none;
 		padding: 0;
@@ -72,8 +83,12 @@ label[for="nav-trigger"] {
 }
 
 
+
 @media (min-width: 768px) {
 
+	.mobile-links {
+		display: none;
+	}
 
 	label[for="nav-trigger"] {
 		display: none;

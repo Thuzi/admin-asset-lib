@@ -94,6 +94,9 @@
 	background: @light-grey;
 	border: 1px solid @medium-grey;
     border-top: none;
+	.desktop-logout {
+		display: none;
+	}
 	.breadcrumb {
 		background: none;
 		margin: 0;
@@ -115,6 +118,12 @@
 }
 
 @media (min-width: 768px) {
+
+	.breadcrumb-wrapper {
+		.desktop-logout {
+			display: inline;
+		}
+	}
 
 	.navbar {
 		.container {
