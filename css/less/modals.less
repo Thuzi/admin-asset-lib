@@ -1,0 +1,29 @@
+
+@import "variables";
+
+.modal-backdrop {
+	background: url(../../images/pattern.png);
+	&.in {
+		opacity: 1;
+	}
+}
+.modal-content {
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+	border: 1px solid @medium-grey;
+	border-radius: 2px;
+}
+.modal-header {
+	padding: 25px;
+}
+.modal-body {
+	padding: 20px;
+	color: @dark-grey;
+}
+.modal-title {
+	text-align: center;
+	color: @danger-red;
+}
+.modal-footer {
+	border-top: none;
+	text-align: center;
+}

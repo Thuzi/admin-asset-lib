@@ -1,0 +1,29 @@
+
+.loader-wrapper {
+	background: url(../../images/pattern.png);
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 2000;
+}
+
+.loader {
+	box-sizing: border-box;
+	height: 60px;
+	width: 60px;
+	border: 0px solid #000;
+	border-radius: 50%;
+	box-shadow: 0 -20px 0 23px #28b4e7 inset;
+	animation: rotate 1.25s infinite ease-in-out;
+}
+
+@keyframes rotate {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}

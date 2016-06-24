@@ -47,8 +47,33 @@ App.config(['$routeProvider', '$locationProvider', '$httpProvider',
 ]);
 
 App.controller('MainCtrl',
-    ['$scope',
-    function ($scope) {
+    ['$scope', '$uibModal',
+    function ($scope, $uibModal) {
+
+        $scope.openModal = function (size) {
+
+            var modalInstance = $uibModal.open({
+              animation: true,
+              templateUrl: '../../templates/modals/confirm.html',
+              controller: 'ModalInstanceCtrl'
+            });
+
+            modalInstance.result.then(function () {
+                console.log('ok');
+            });
+        };
 
     }
 ]);
+
+
+App.controller('ModalInstanceCtrl', function ($scope, $uibModalInstance) {
+
+  $scope.ok = function () {
+    $uibModalInstance.close();
+  };
+
+  $scope.cancel = function () {
+    $uibModalInstance.dismiss('cancel');
+  };
+});
