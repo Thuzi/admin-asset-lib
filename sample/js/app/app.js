@@ -46,9 +46,18 @@ App.config(['$routeProvider', '$locationProvider', '$httpProvider',
     }
 ]);
 
+App.run(function($rootScope, $location) {
+    $rootScope.$on("$locationChangeStart", function(event, next, current) {
+        console.log($location.url());
+
+        $rootScope.activeNav = $location.url();
+
+    });
+});
+
 App.controller('MainCtrl',
-    ['$scope', '$uibModal',
-    function ($scope, $uibModal) {
+    ['$scope', '$uibModal', '$location',
+    function ($scope, $uibModal, $location) {
 
         $scope.openModal = function (size) {
 
