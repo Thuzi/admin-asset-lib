@@ -10,13 +10,27 @@
 }
 
 .loader {
+    position: relative;
 	box-sizing: border-box;
-	height: 60px;
-	width: 60px;
+	height: 75px;
+	width: 75px;
 	border: 0px solid #000;
 	border-radius: 50%;
-	box-shadow: 0 -20px 0 23px #28b4e7 inset;
+	box-shadow: 0 -28px 0 31px #28b4e7 inset;
 	animation: rotate 1.25s infinite ease-in-out;
+
+	&::after {
+		content: "";
+	    background: #fff;
+	    width: 36px;
+	    height: 36px;
+	    display: block;
+	    border-radius: 50px;
+		position: absolute;
+		top: 19.5px;
+    	left: 19.5px;
+	}
+
 }
 
 @keyframes rotate {
