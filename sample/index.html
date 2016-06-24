@@ -35,12 +35,11 @@
     </head>
     <body ng-controller="MainCtrl" >
 
-        <!-- <div class="loader-wrapper">
+        <div ng-if="loading" class="loader-wrapper">
             <div class="loader"></div>
-        </div> -->
+        </div>
 
         <div class="container" >
-            <!-- insert header -->
             <div ng-include="'../templates/header.html'"></div>
             <div ng-view ></div>
         </div>
