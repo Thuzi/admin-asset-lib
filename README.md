@@ -14,9 +14,9 @@ bower install git@github.com:Thuzi/admin-asset-lib.git --save
 
 ### Dependencies
 
-All dependencies will be installed if not already present when you install the package from bower. It does this based on the dependencies defined in the bower.json.
+All dependencies will be installed if not already present when you install the package from bower. It does this based on the dependencies defined in the **bower.json**.
 
-The project will appear in the bower_components folder as if it where any other package.
+The project will appear in the **bower_components** folder as if it where any other package.
 
 _(can be updated as needed, or based on new releases)_
 
@@ -28,7 +28,7 @@ _(can be updated as needed, or based on new releases)_
 
 ### Bootstrap
 
-The bootstrap.css included in the css folder is a custom build of bootstrap from the bootstrap [site](http://getbootstrap.com). Included with it is also the config.json file that can be used to update the custom build on the bootstrap site.
+The bootstrap.css included in the css folder is a custom build of bootstrap from the bootstrap [site](http://getbootstrap.com). Included with it is also the **config.json** file that can be used to update the custom build on the bootstrap site.
 
 ### Using the Less Files
 
@@ -38,11 +38,11 @@ _More less files can be added as needed when more components are created. A new 
 
 One caveat to less is that you must include the **../bower_components/less/dist/less.min.js** script after all of your less file includes.
 
-Another caveat to less is that calc() method does not work with mixing units of messure. ie. calc(100% - 80px) does not work. This does work with CSS3 however. So, to allow for this and other functionailty that less fails to provide, we have the things-that-dont-work-in-less.css file.
+Another caveat to less is that calc() method does not work with mixing units of messure. ie. calc(100% - 80px) does not work. This does work with CSS3 however. So, to allow for this and other functionailty that less fails to provide, we have the **things-that-dont-work-in-less.css** file.
 
 ### Variables.less
 
-The variables.less file is used to elimiate the need to add the same value to properties across all .less files. It also allows updates to specific values to be done much more simple because it is only defined in one place.
+The **variables.less** file is used to elimiate the need to add the same value to properties across all .less files. It also allows updates to specific values to be done much more simple because it is only defined in one place.
 
 ### Fonts
 
