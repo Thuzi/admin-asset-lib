@@ -1,13 +1,13 @@
 {
-  "name": "admin-asset-lib-style-guide",
+  "name": "admin-asset-lib",
   "version": "0.1",
   "description": "Admin Asset Lib Style Guide",
   "repository": {
     "type": "git",
-    "url": "git@github.com:Thuzi/admin-asset-lib-style-guide.git"
+    "url": "git@github.com:Thuzi/admin-asset-lib.git"
   },
   "bugs": {
-    "url": "https://github.com/Thuzi/admin-asset-lib-style-guide/issues"
+    "url": "https://github.com/Thuzi/admin-asset-lib/issues"
   },
-  "homepage": "https://github.com/Thuzi/admin-asset-lib-style-guide"
+  "homepage": "https://github.com/Thuzi/admin-asset-lib"
 }

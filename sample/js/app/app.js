@@ -10,6 +10,10 @@ App.config(['$routeProvider', '$locationProvider', '$httpProvider',
         $routeProvider
 
             .when('/', {
+                templateUrl: '../../templates/about.html'
+            })
+
+            .when('/colors', {
                 templateUrl: '../../templates/colors.html'
             })
 
@@ -48,10 +52,7 @@ App.config(['$routeProvider', '$locationProvider', '$httpProvider',
 
 App.run(function($rootScope, $location) {
     $rootScope.$on("$locationChangeStart", function(event, next, current) {
-        console.log($location.url());
-
         $rootScope.activeNav = $location.url();
-
     });
 });
 

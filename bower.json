@@ -1,6 +1,6 @@
 {
-  "name": "admin-asset-lib-style-guide",
-  "homepage": "https://github.com/Thuzi/admin-asset-lib-style-guide",
+  "name": "admin-asset-lib",
+  "homepage": "https://github.com/Thuzi/admin-asset-lib",
   "authors": [
     "Joseph Layman <laymanje@gmail.com>"
   ],
@@ -16,14 +16,11 @@
     "tests"
   ],
   "dependencies": {
-    "angular": "1.5.3",
+    "angular": "^1.5.7",
     "ui-bootstrap": "angular-ui-bootstrap#1.3.3",
-    "angular-bootstrap": "1.3.3",
-    "angular-route": "1.5.3",
-    "angular-animate": "1.5.3"
-  },
-  "resolutions": {
-    "angular-route": "1.5.3",
-    "angular-animate": "1.5.3"
+    "angular-bootstrap": "^1.3.3",
+    "angular-route": "^1.5.7",
+    "angular-animate": "^1.5.7",
+    "less": "^2.7.1"
   }
 }
