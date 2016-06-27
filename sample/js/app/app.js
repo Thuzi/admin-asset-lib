@@ -2,7 +2,7 @@
 'use strict';
 
 var App = angular.module('App',
-    ['ngRoute', 'ui.bootstrap', 'ngAnimate']);
+    ['ngRoute', 'ui.bootstrap', 'ngAnimate', 'ngMessages']);
 
 App.config(['$routeProvider', '$locationProvider', '$httpProvider',
     function ($routeProvider, $locationProvider, $httpProvider) {
@@ -59,6 +59,11 @@ App.run(function($rootScope, $location) {
 App.controller('MainCtrl',
     ['$scope', '$uibModal', '$location',
     function ($scope, $uibModal, $location) {
+
+
+        $scope.fakeInputItems = {
+            textRequired: 'Hello'
+        };
 
         $scope.openModal = function (size) {
 

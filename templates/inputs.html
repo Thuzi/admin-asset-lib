@@ -28,7 +28,7 @@
 
 			<h2 style="margin-top: 80px;" >Inputs</h2>
 
-			<div class="row" >
+			<form name="form" class="row">
 
 				<div class="col-sm-12" >
 					<div class="form-group" >
@@ -61,10 +61,18 @@
 					<div class="form-group" >
 						<label>Text (required/valid)</label>
 						<div class="with-icon" >
-							<input type="text" class="form-control" value="Hello" />
-							<i class="fa fa-check-circle" ></i>
+							<input type="text"
+								class="form-control"
+								value="Hello"
+								name="textRequired"
+								ng-model="fakeInputItems.textRequired"
+								ng-required="true" />
+							<i ng-class="{ 'fa-check-circle': form.textRequired.$valid, 'fa-exclamation-circle': !form.textRequired.$valid,  }" class="fa" ></i>
 						</div>
 						<div class="error-wrapper" >
+							<div ng-messages="form.textRequired.$error">
+							    <div ng-message="required">Required</div>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -73,11 +81,18 @@
 					<div class="form-group" >
 						<label>Text (required/invalid)</label>
 						<div class="with-icon" >
-							<input type="text" class="form-control" />
-							<i class="fa fa-exclamation-circle" ></i>
+							<input type="text"
+								class="form-control"
+								value="Hello"
+								name="textRequiredInvalid"
+								ng-model="fakeInputItems.textRequiredInvalid"
+								ng-required="true" />
+							<i ng-class="{ 'fa-check-circle': form.textRequiredInvalid.$valid, 'fa-exclamation-circle': !form.textRequiredInvalid.$valid,  }" class="fa" ></i>
 						</div>
 						<div class="error-wrapper" >
-							Required
+							<div ng-messages="form.textRequiredInvalid.$error">
+							    <div ng-message="required">Required</div>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -102,17 +117,25 @@
 							</label>
 						</div>
 						<div class="with-icon" >
-							<input type="text" class="form-control" />
-							<i class="fa fa-exclamation-circle" ></i>
+							<input type="text"
+								class="form-control"
+								value="Hello"
+								name="textRequiredInvalidWithCheck"
+								ng-model="fakeInputItems.textRequiredInvalidWithCheck"
+								ng-required="true" />
+							<i ng-class="{ 'fa-check-circle': form.textRequiredInvalidWithCheck.$valid, 'fa-exclamation-circle': !form.textRequiredInvalidWithCheck.$valid,  }" class="fa" ></i>
 						</div>
 						<div class="error-wrapper" >
-							Required
+							<div ng-messages="form.textRequiredInvalidWithCheck.$error">
+							    <div ng-message="required">Required</div>
+							</div>
 						</div>
 					</div>
 				</div>
 
 
-			</div>
+			</form>
+
 		</div>
 	</div>
 </div>

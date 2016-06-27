@@ -23,6 +23,7 @@ _(can be updated as needed, or based on new releases)_
 *   [Angular](https://angularjs.org/)
 *   [Angular-Animate](https://docs.angularjs.org/guide/animations)
 *   [Angular-Route](https://docs.angularjs.org/api/ngRoute)
+*   [Angular-Messages](https://docs.angularjs.org/api/ngMessages/directive/ngMessages)
 *   [Angular-Bootstrap](https://angular-ui.github.io/bootstrap/)
 *   [Less](http://lesscss.org/)
 
