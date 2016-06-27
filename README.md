@@ -36,6 +36,10 @@ Each less file in the css/less folder was created to house very specific CSS. Al
 
 _More less files can be added as needed when more components are created. A new less file should be added for any and all new components._
 
+One caveat to less is that you must include the **../bower_components/less/dist/less.min.js** script after all of your less file includes.
+
+Another caveat to less is that calc() method does not work with mixing units of messure. ie. calc(100% - 80px) does not work. This does work with CSS3 however. So, to allow for this and other functionailty that less fails to provide, we have the things-that-dont-work-in-less.css file.
+
 ### Variables.less
 
 The variables.less file is used to elimiate the need to add the same value to properties across all .less files. It also allows updates to specific values to be done much more simple because it is only defined in one place.
@@ -48,4 +52,4 @@ The default font in the typography.less is a google web font called Open Sans. I
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700,700italic);
 ```
 
-There is also the icon font [Font Awesome](http://fontawesome.io) that is used and avalible. The css for it is housed directly in the css folder. The fonts folder houses the web font files, in the formats .eot, .svg, .ttf, .woff, .woff2, and .otf.
+In the typography.less is also the icon font [Font Awesome](http://fontawesome.io) that is used. The fonts folder houses the web font files, in the formats .eot, .svg, .ttf, .woff, .woff2, and .otf.
