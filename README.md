@@ -11,6 +11,11 @@ The project should be installed to all thuzi admins via [bower](https://bower.io
 ```
 bower install git@github.com:Thuzi/admin-asset-lib.git --save
 ```
+or
+
+```
+bower install https://github.com/Thuzi/admin-asset-lib.git --save
+```
 
 ### Dependencies
 
