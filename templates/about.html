@@ -1,71 +1,72 @@
-<!-- insert the context of nav as needed -->
-<div ng-include="'../templates/nav.html'"></div>
 
-<div class="main-content"> <!-- add the class "no-nav" if you want it to expand the view width of the container -->
+<div class="main-content">
 
-	<div class="fixed-top-section">
+	<!-- insert the context of nav as needed -->
+	<div ng-include="'../templates/nav.html'"></div>
 
-		<div class="col-xs-6 col-sm-6 col-md-4" >
-			<div class="form-group search-wrapper" >
-				<div class="with-icon" >
-					<input type="text" class="form-control" placeholder="Fake Search" />
-					<i class="fa fa-search" ></i>
+	<div class="inner-main-content" >
+
+		<div class="fixed-top-section">
+
+			<div class="col-xs-6 col-sm-6 col-md-4" >
+				<div class="form-group search-wrapper" >
+					<div class="with-icon" >
+						<input type="text" class="form-control" placeholder="Fake Search" />
+						<i class="fa fa-search" ></i>
+					</div>
 				</div>
 			</div>
-		</div>
-		<div class="col-xs-6 col-sm-6 col-md-8" >
-			<button class="btn btn-success pull-right" type="button" > <i class="fa fa-plus" ></i> Example Add</button>
-		</div>
-
-		<div class="clearfix"></div> <!-- this also has the bottom border attached to it -->
-
-	</div>
-
-	<div class="scrolling-content">
-
-		<div class="col-sm-12">
-
-			<h2 style="margin-top: 80px;" >What's in the Box!?!?</h2>
-
-			<h4>This project was created to house the default styles and components for all Thuzi admins apps.</h4>
-			<p>The project contains styles for all the basic elements and some for more complex components.</p>
-			<p>Any new components that are created that can be used in a universal manor should be added to this project. As well as any updated basic element styles.</p>
-			<p>The project should be installed to all thuzi admins via <a target="_blank" href="https://bower.io" >bower</a>. All Thuzi developers should have access to the <a href="https://github.com/Thuzi/admin-asset-lib" target="_blank" >repo in github</a>.</p>
-			<pre><code>bower install git@github.com:Thuzi/admin-asset-lib.git --save</code></pre>
-
-			<h3>Dependencies</h3>
-			<p>All dependencies will be installed if not already present when you install the package from bower. It does this based on the dependencies defined in the <b>bower.json</b>.</p>
-			<p>The project will appear in the <b>bower_components</b> folder as if it where any other package.</p>
-			<p><i>(can be updated as needed, or based on new releases)</i></p>
-
-			<ul>
-				<li><a target="_blank" href="https://angularjs.org/" >Angular</a></li>
-				<li><a target="_blank" href="https://docs.angularjs.org/guide/animations" >Angular-Animate</a></li>
-				<li><a target="_blank" href="https://docs.angularjs.org/api/ngRoute" >Angular-Route</a></li>
-				<li><a target="_blank" href="https://docs.angularjs.org/api/ngMessages/directive/ngMessages" >Angular-Messages</a></li>
-				<li><a target="_blank" href="https://angular-ui.github.io/bootstrap/" >Angular-Bootstrap</a></li>
-				<li><a target="_blank" href="http://lesscss.org/" >Less</a></li>
-			</ul>
-
-			<h3>Bootstrap</h3>
-			<p>The bootstrap.css included in the css folder is a custom build of bootstrap from the bootstrap <a target="_blank" href="http://getbootstrap.com" >site</a>. Included with it is also the <b>config.json</b> file that can be used to update the custom build on the bootstrap site.</p>
-
-			<h3>Using the Less Files</h3>
-			<p>Each less file in the css/less folder was created to house very specific CSS. All the CSS in each less file is done in a mobile first and Object Oriented manor. This is to increase and promote re-use of existing styles to decrease page bloat.</p>
-			<p><i>More less files can be added as needed when more components are created. A new less file should be added for any and all new components.</i> </p>
-			<p>One caveat to less is that you must include the <b>../bower_components/less/dist/less.min.js</b> script after all of your less file includes.</p>
-			<p>Another caveat to less is that calc() method does not work with mixing units of messure. ie. calc(100% - 80px) does not work. This does work with CSS3 however. So, to allow for this and other functionailty that less fails to provide, we have the <b>things-that-dont-work-in-less.css</b> file.</p>
-
-			<h3>Variables.less</h3>
-			<p>The <b>variables.less</b> file is used to elimiate the need to add the same value to properties across all .less files. It also allows updates to specific values to be done much more simple because it is only defined in one place.</p>
-
-			<h3>Fonts</h3>
-			<p>The default font in the typography.less is a google web font called Open Sans. It has the 400, 600 and 700 weight versions. With and Wihout italics.</p>
-			<pre><code>@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700,700italic);</code></pre>
-
-			<p>In the typography.less is also the icon font <a target="_blank" href="http://fontawesome.io" >Font Awesome</a> that is used. The fonts folder houses the web font files, in the formats .eot, .svg, .ttf, .woff, .woff2, and .otf.</p>
-
+			<div class="col-xs-6 col-sm-6 col-md-8" >
+				<button class="btn btn-success pull-right" type="button" > <i class="fa fa-plus" ></i> Example Add</button>
+			</div>
 		</div>
 
-	</div>
+		<div class="scrolling-content">
+
+			<div class="col-sm-12">
+
+				<h2>What's in the Box!?!?</h2>
+
+				<h4>This project was created to house the default styles and components for all Thuzi admins apps.</h4>
+				<p>The project contains styles for all the basic elements and some for more complex components.</p>
+				<p>Any new components that are created that can be used in a universal manor should be added to this project. As well as any updated basic element styles.</p>
+				<p>The project should be installed to all thuzi admins via <a target="_blank" href="https://bower.io" >bower</a>. All Thuzi developers should have access to the <a href="https://github.com/Thuzi/admin-asset-lib" target="_blank" >repo in github</a>.</p>
+				<pre><code>bower install git@github.com:Thuzi/admin-asset-lib.git --save</code></pre>
+
+				<h3>Dependencies</h3>
+				<p>All dependencies will be installed if not already present when you install the package from bower. It does this based on the dependencies defined in the <b>bower.json</b>.</p>
+				<p>The project will appear in the <b>bower_components</b> folder as if it where any other package.</p>
+				<p><i>(can be updated as needed, or based on new releases)</i></p>
+
+				<ul>
+					<li><a target="_blank" href="https://angularjs.org/" >Angular</a></li>
+					<li><a target="_blank" href="https://docs.angularjs.org/guide/animations" >Angular-Animate</a></li>
+					<li><a target="_blank" href="https://docs.angularjs.org/api/ngRoute" >Angular-Route</a></li>
+					<li><a target="_blank" href="https://docs.angularjs.org/api/ngMessages/directive/ngMessages" >Angular-Messages</a></li>
+					<li><a target="_blank" href="https://angular-ui.github.io/bootstrap/" >Angular-Bootstrap</a></li>
+					<li><a target="_blank" href="http://lesscss.org/" >Less</a></li>
+				</ul>
+
+				<h3>Bootstrap</h3>
+				<p>The bootstrap.css included in the css folder is a custom build of bootstrap from the bootstrap <a target="_blank" href="http://getbootstrap.com" >site</a>. Included with it is also the <b>config.json</b> file that can be used to update the custom build on the bootstrap site.</p>
+
+				<h3>Using the Less Files</h3>
+				<p>Each less file in the css/less folder was created to house very specific CSS. All the CSS in each less file is done in a mobile first and Object Oriented manor. This is to increase and promote re-use of existing styles to decrease page bloat.</p>
+				<p><i>More less files can be added as needed when more components are created. A new less file should be added for any and all new components.</i> </p>
+				<p>One caveat to less is that you must include the <b>../bower_components/less/dist/less.min.js</b> script after all of your less file includes.</p>
+				<p>Another caveat to less is that calc() method does not work with mixing units of messure. ie. calc(100% - 80px) does not work. This does work with CSS3 however. So, to allow for this and other functionailty that less fails to provide, we have the <b>things-that-dont-work-in-less.css</b> file.</p>
+
+				<h3>Variables.less</h3>
+				<p>The <b>variables.less</b> file is used to elimiate the need to add the same value to properties across all .less files. It also allows updates to specific values to be done much more simple because it is only defined in one place.</p>
+
+				<h3>Fonts</h3>
+				<p>The default font in the typography.less is a google web font called Open Sans. It has the 400, 600 and 700 weight versions. With and Wihout italics.</p>
+				<pre><code>@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700,700italic);</code></pre>
+
+				<p>In the typography.less is also the icon font <a target="_blank" href="http://fontawesome.io" >Font Awesome</a> that is used. The fonts folder houses the web font files, in the formats .eot, .svg, .ttf, .woff, .woff2, and .otf.</p>
+
+			</div>
+
+		</div>
+	<div>
 </div>

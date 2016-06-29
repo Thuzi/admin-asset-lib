@@ -6,143 +6,146 @@
 -->
 
 
-<!-- insert the context of nav as needed -->
-<div ng-include="'../templates/nav.html'"></div>
+<div class="main-content">
 
-<div class="main-content"> <!-- add the class "no-nav" if you want it to expand the view width of the container -->
+	<!-- insert the context of nav as needed -->
+	<div ng-include="'../templates/nav.html'"></div>
 
-	<div class="fixed-top-section">
+	<div class="inner-main-content" >
+		<div class="fixed-top-section">
 
-		<div class="col-xs-6 col-sm-6 col-md-4" >
-			<div class="form-group search-wrapper" >
-				<div class="with-icon" >
-					<input type="text" class="form-control" placeholder="Fake Search" />
-					<i class="fa fa-search" ></i>
+			<div class="col-xs-6 col-sm-6 col-md-4" >
+				<div class="form-group search-wrapper" >
+					<div class="with-icon" >
+						<input type="text" class="form-control" placeholder="Fake Search" />
+						<i class="fa fa-search" ></i>
+					</div>
 				</div>
 			</div>
+			<div class="col-xs-6 col-sm-6 col-md-8" >
+				<button class="btn btn-success pull-right" type="button" > <i class="fa fa-plus" ></i> Example Add</button>
+			</div>
+
+			<div class="clearfix"></div> <!-- this also has the bottom border attached to it -->
+
 		</div>
-		<div class="col-xs-6 col-sm-6 col-md-8" >
-			<button class="btn btn-success pull-right" type="button" > <i class="fa fa-plus" ></i> Example Add</button>
-		</div>
 
-		<div class="clearfix"></div> <!-- this also has the bottom border attached to it -->
+		<div class="scrolling-content">
 
-	</div>
+			<div class="col-sm-12">
 
-	<div class="scrolling-content">
+				<h2>Inputs</h2>
 
-		<div class="col-sm-12">
+				<form name="form" class="row">
 
-			<h2 style="margin-top: 80px;" >Inputs</h2>
-
-			<form name="form" class="row">
-
-				<div class="col-sm-12" >
-					<div class="form-group" >
-						<div class="checkbox single-checkbox">
-							<label>
-								<input type="checkbox"> Standalone Checkbox
-							</label>
+					<div class="col-sm-12" >
+						<div class="form-group" >
+							<div class="checkbox single-checkbox">
+								<label>
+									<input type="checkbox"> Standalone Checkbox
+								</label>
+							</div>
 						</div>
 					</div>
-				</div>
 
-				<div class="col-sm-6" >
-					<div class="form-group" >
-						<label>Search</label>
-						<div class="with-icon" >
+					<div class="col-sm-6" >
+						<div class="form-group" >
+							<label>Search</label>
+							<div class="with-icon" >
+								<input type="text" class="form-control" />
+								<i class="fa fa-search" ></i>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-sm-6" >
+						<div class="form-group" >
+							<label>Text (not required)</label>
 							<input type="text" class="form-control" />
-							<i class="fa fa-search" ></i>
 						</div>
 					</div>
-				</div>
 
-				<div class="col-sm-6" >
-					<div class="form-group" >
-						<label>Text (not required)</label>
-						<input type="text" class="form-control" />
-					</div>
-				</div>
-
-				<div class="col-sm-6" >
-					<div class="form-group" >
-						<label>Text (required/valid)</label>
-						<div class="with-icon" >
-							<input type="text"
-								class="form-control"
-								value="Hello"
-								name="textRequired"
-								ng-model="fakeInputItems.textRequired"
-								ng-required="true" />
-							<i ng-class="{ 'fa-check-circle': form.textRequired.$valid, 'fa-exclamation-circle': !form.textRequired.$valid,  }" class="fa" ></i>
-						</div>
-						<div class="error-wrapper" >
-							<div ng-messages="form.textRequired.$error">
-							    <div ng-message="required">Required</div>
+					<div class="col-sm-6" >
+						<div class="form-group" >
+							<label>Text (required/valid)</label>
+							<div class="with-icon" >
+								<input type="text"
+									class="form-control"
+									value="Hello"
+									name="textRequired"
+									ng-model="fakeInputItems.textRequired"
+									ng-required="true" />
+								<i ng-class="{ 'fa-check-circle': form.textRequired.$valid, 'fa-exclamation-circle': !form.textRequired.$valid,  }" class="fa" ></i>
+							</div>
+							<div class="error-wrapper" >
+								<div ng-messages="form.textRequired.$error">
+								    <div ng-message="required">Required</div>
+								</div>
 							</div>
 						</div>
 					</div>
-				</div>
 
-				<div class="col-sm-6" >
-					<div class="form-group" >
-						<label>Text (required/invalid)</label>
-						<div class="with-icon" >
-							<input type="text"
-								class="form-control"
-								value="Hello"
-								name="textRequiredInvalid"
-								ng-model="fakeInputItems.textRequiredInvalid"
-								ng-required="true" />
-							<i ng-class="{ 'fa-check-circle': form.textRequiredInvalid.$valid, 'fa-exclamation-circle': !form.textRequiredInvalid.$valid,  }" class="fa" ></i>
-						</div>
-						<div class="error-wrapper" >
-							<div ng-messages="form.textRequiredInvalid.$error">
-							    <div ng-message="required">Required</div>
+					<div class="col-sm-6" >
+						<div class="form-group" >
+							<label>Text (required/invalid)</label>
+							<div class="with-icon" >
+								<input type="text"
+									class="form-control"
+									value="Hello"
+									name="textRequiredInvalid"
+									ng-model="fakeInputItems.textRequiredInvalid"
+									ng-required="true" />
+								<i ng-class="{ 'fa-check-circle': form.textRequiredInvalid.$valid, 'fa-exclamation-circle': !form.textRequiredInvalid.$valid,  }" class="fa" ></i>
+							</div>
+							<div class="error-wrapper" >
+								<div ng-messages="form.textRequiredInvalid.$error">
+								    <div ng-message="required">Required</div>
+								</div>
 							</div>
 						</div>
 					</div>
-				</div>
 
-				<div class="col-sm-6" >
-					<div class="form-group" >
-						<label>Text (required/disabled)</label>
-						<div class="with-icon" >
-							<input type="text" disabled class="form-control" value="Hello" />
-							<i class="fa fa-circle" ></i>
-						</div>
-						<div class="error-wrapper" >
-						</div>
-					</div>
-				</div>
-
-				<div class="col-sm-6" >
-					<div class="form-group with-checkbox" >
-						<div class="checkbox">
-							<label>
-								<input checked type="checkbox"> Enable Field Name
-							</label>
-						</div>
-						<div class="with-icon" >
-							<input type="text"
-								class="form-control"
-								value="Hello"
-								name="textRequiredInvalidWithCheck"
-								ng-model="fakeInputItems.textRequiredInvalidWithCheck"
-								ng-required="true" />
-							<i ng-class="{ 'fa-check-circle': form.textRequiredInvalidWithCheck.$valid, 'fa-exclamation-circle': !form.textRequiredInvalidWithCheck.$valid,  }" class="fa" ></i>
-						</div>
-						<div class="error-wrapper" >
-							<div ng-messages="form.textRequiredInvalidWithCheck.$error">
-							    <div ng-message="required">Required</div>
+					<div class="col-sm-6" >
+						<div class="form-group" >
+							<label>Text (required/disabled)</label>
+							<div class="with-icon" >
+								<input type="text" disabled class="form-control" value="Hello" />
+								<i class="fa fa-circle" ></i>
+							</div>
+							<div class="error-wrapper" >
 							</div>
 						</div>
 					</div>
-				</div>
+
+					<div class="col-sm-6" >
+						<div class="form-group with-checkbox" >
+							<div class="checkbox">
+								<label>
+									<input checked type="checkbox"> Enable Field Name
+								</label>
+							</div>
+							<div class="with-icon" >
+								<input type="text"
+									class="form-control"
+									value="Hello"
+									name="textRequiredInvalidWithCheck"
+									ng-model="fakeInputItems.textRequiredInvalidWithCheck"
+									ng-required="true" />
+								<i ng-class="{ 'fa-check-circle': form.textRequiredInvalidWithCheck.$valid, 'fa-exclamation-circle': !form.textRequiredInvalidWithCheck.$valid,  }" class="fa" ></i>
+							</div>
+							<div class="error-wrapper" >
+								<div ng-messages="form.textRequiredInvalidWithCheck.$error">
+								    <div ng-message="required">Required</div>
+								</div>
+							</div>
+						</div>
+					</div>
 
 
-			</form>
+				</form>
 
+			</div>
 		</div>
+
 	</div>
 </div>

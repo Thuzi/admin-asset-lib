@@ -6,11 +6,8 @@
 	color: @light-text;
 	border: none;
 	margin-bottom: 0;
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	z-index: 1010;
+	flex: 0;
+	min-width: 100%;
 	border-radius: 0;
 	.navbar-collapse {
 		border: none;
@@ -103,10 +100,9 @@
 	background: @light-grey;
 	border: 1px solid @medium-grey;
     border-top: none;
-	width: 100%;
-    top: 50px;
-    left: 0;
-    position: absolute;
+	flex: 0;
+    min-width: 100%;
+    min-height: 30px;
     z-index: 1002;
 	.desktop-logout {
 		display: none;
@@ -117,14 +113,6 @@
 		padding: 5px 0;
 		float: left;
 		li {
-			// display: none;
-			// &:nth-last-child(2) {
-			// 	display: inline;
-			// 	&:before {
-			// 		content: "\2039";
-			// 		color: #000;
-			// 	}
-			// }
 			a {
 				color: @dark-grey;
 				cursor: pointer;
@@ -194,22 +182,10 @@
 @media (min-width: 768px) {
 
 	.breadcrumb-wrapper {
-		// .breadcrumb {
-		// 	li {
-		// 		display: inline;
-		// 		// &:nth-last-child(2) {
-		// 		// 	&:before {
-		// 		// 		content: "/\00a0";
-		// 		// 		color: #cccccc;
-		// 		// 	}
-		// 		// }
-		// 	}
-		// }
 		.desktop-logout {
 			display: inline;
 		}
 	}
-
 	.navbar {
 		.container {
 			.navbar-brand {
@@ -224,7 +200,6 @@
 			display: block;
 		}
 	}
-
 }
 
 
