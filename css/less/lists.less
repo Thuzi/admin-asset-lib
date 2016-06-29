@@ -7,7 +7,11 @@
         border-color: @medium-grey;
         border-left: none;
         border-right: none;
-        &:first-child, &:last-child {
+        &:first-child {
+            border-radius: 0;
+            border-top: none;
+        }
+        &:last-child {
             border-radius: 0;
         }
         .left-data {
@@ -46,7 +50,7 @@
         border-top: none;
         border-left: none;
         &:first-child {
-            border-top: 1px solid @medium-grey;
+            border-top: none;
         }
         a {
             display: block;
@@ -59,9 +63,9 @@
             float: left;
         }
         h3 {
-            font-size: 1.35em;
+            font-size: 1.3em;
             float: left;
-            margin: 18px 0px 0px 12px;
+            margin: 15px 0px 0px 12px;
         }
         img {
             border-radius: 50px;
@@ -79,9 +83,6 @@
             border-top: none;
             &:first-child {
                 border-top: none;
-            }
-            h3 {
-                font-size: 1.6em;
             }
         }
     }
