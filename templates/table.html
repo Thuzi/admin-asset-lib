@@ -4,143 +4,146 @@
 	Basic table layout
 -->
 
-<!-- insert the context of nav as needed -->
-<div ng-include="'../templates/nav.html'"></div>
+<div class="main-content">
 
-<div class="main-content"> <!-- add the class "no-nav" if you want it to expand the view width of the container -->
+	<!-- insert the context of nav as needed -->
+	<div ng-include="'../templates/nav.html'"></div>
 
-	<div class="fixed-top-section">
+	<div class="inner-main-content" >
+		<div class="fixed-top-section">
 
-		<div class="col-xs-6 col-sm-6 col-md-4" >
-			<div class="form-group search-wrapper" >
-				<div class="with-icon" >
-					<input type="text" class="form-control" placeholder="Fake Search" />
-					<i class="fa fa-search" ></i>
+			<div class="col-xs-6 col-sm-6 col-md-4" >
+				<div class="form-group search-wrapper" >
+					<div class="with-icon" >
+						<input type="text" class="form-control" placeholder="Fake Search" />
+						<i class="fa fa-search" ></i>
+					</div>
 				</div>
 			</div>
+			<div class="col-xs-6 col-sm-6 col-md-8" >
+				<button class="btn btn-success pull-right" type="button" > <i class="fa fa-plus" ></i> Example Add</button>
+			</div>
+
+			<div class="clearfix"></div> <!-- this also has the bottom border attached to it -->
+
 		</div>
-		<div class="col-xs-6 col-sm-6 col-md-8" >
-			<button class="btn btn-success pull-right" type="button" > <i class="fa fa-plus" ></i> Example Add</button>
+
+		<div class="scrolling-content">
+
+			<div style="margin-top: 63px;" ></div>
+
+			<div class="col-sm-12" >
+				<table class="table table-striped left-label-table" >
+					<tbody>
+						<tr>
+							<td>Users</td>
+							<td>
+								<div class="checkbox">
+									<label>
+										<input type="checkbox"> <span>Allow</span>
+									</label>
+								</div>
+							</td>
+							<td>
+								<div class="checkbox">
+									<label>
+										<input type="checkbox"> <span>Allow</span>
+									</label>
+								</div>
+							</td>
+							<td>
+								<div class="checkbox">
+									<label>
+										<input type="checkbox"> <span>Allow</span>
+									</label>
+								</div>
+							</td>
+							<td>
+								<div class="checkbox">
+									<label>
+										<input type="checkbox"> <span>Allow</span>
+									</label>
+								</div>
+							</td>
+						</tr>
+
+						<tr>
+							<td>Firewall</td>
+							<td>
+								<div class="checkbox">
+									<label>
+										<input type="checkbox"> <span>Allow</span>
+									</label>
+								</div>
+							</td>
+							<td>
+								<div class="checkbox">
+									<label>
+										<input type="checkbox"> <span>Allow</span>
+									</label>
+								</div>
+							</td>
+							<td>
+								<div class="checkbox">
+									<label>
+										<input type="checkbox"> <span>Allow</span>
+									</label>
+								</div>
+							</td>
+							<td>
+								<div class="checkbox">
+									<label>
+										<input type="checkbox"> <span>Allow</span>
+									</label>
+								</div>
+							</td>
+						</tr>
+
+						<tr>
+							<td>Brands</td>
+							<td>
+								<div class="checkbox">
+									<label>
+										<input type="checkbox"> <span>Allow</span>
+									</label>
+								</div>
+							</td>
+							<td>
+								<div class="checkbox">
+									<label>
+										<input type="checkbox"> <span>Allow</span>
+									</label>
+								</div>
+							</td>
+							<td>
+								<div class="checkbox">
+									<label>
+										<input type="checkbox"> <span>Allow</span>
+									</label>
+								</div>
+							</td>
+							<td>
+								<div class="checkbox">
+									<label>
+										<input type="checkbox"> <span>Allow</span>
+									</label>
+								</div>
+							</td>
+						</tr>
+
+					</tbody>
+					<thead>
+						<tr>
+							<td>Scope</td>
+							<td>Created</td>
+							<td>Read</td>
+							<td>Update</td>
+							<td>Delete</td>
+						</tr>
+					</thead>
+				</table>
+			</div>
 		</div>
 
-		<div class="clearfix"></div> <!-- this also has the bottom border attached to it -->
-
-	</div>
-
-	<div class="scrolling-content">
-
-		<div style="margin-top: 63px;" ></div>
-
-		<div class="col-sm-12" >
-			<table class="table table-striped left-label-table" >
-				<tbody>
-					<tr>
-						<td>Users</td>
-						<td>
-							<div class="checkbox">
-								<label>
-									<input type="checkbox"> <span>Allow</span>
-								</label>
-							</div>
-						</td>
-						<td>
-							<div class="checkbox">
-								<label>
-									<input type="checkbox"> <span>Allow</span>
-								</label>
-							</div>
-						</td>
-						<td>
-							<div class="checkbox">
-								<label>
-									<input type="checkbox"> <span>Allow</span>
-								</label>
-							</div>
-						</td>
-						<td>
-							<div class="checkbox">
-								<label>
-									<input type="checkbox"> <span>Allow</span>
-								</label>
-							</div>
-						</td>
-					</tr>
-
-					<tr>
-						<td>Firewall</td>
-						<td>
-							<div class="checkbox">
-								<label>
-									<input type="checkbox"> <span>Allow</span>
-								</label>
-							</div>
-						</td>
-						<td>
-							<div class="checkbox">
-								<label>
-									<input type="checkbox"> <span>Allow</span>
-								</label>
-							</div>
-						</td>
-						<td>
-							<div class="checkbox">
-								<label>
-									<input type="checkbox"> <span>Allow</span>
-								</label>
-							</div>
-						</td>
-						<td>
-							<div class="checkbox">
-								<label>
-									<input type="checkbox"> <span>Allow</span>
-								</label>
-							</div>
-						</td>
-					</tr>
-
-					<tr>
-						<td>Brands</td>
-						<td>
-							<div class="checkbox">
-								<label>
-									<input type="checkbox"> <span>Allow</span>
-								</label>
-							</div>
-						</td>
-						<td>
-							<div class="checkbox">
-								<label>
-									<input type="checkbox"> <span>Allow</span>
-								</label>
-							</div>
-						</td>
-						<td>
-							<div class="checkbox">
-								<label>
-									<input type="checkbox"> <span>Allow</span>
-								</label>
-							</div>
-						</td>
-						<td>
-							<div class="checkbox">
-								<label>
-									<input type="checkbox"> <span>Allow</span>
-								</label>
-							</div>
-						</td>
-					</tr>
-
-				</tbody>
-				<thead>
-					<tr>
-						<td>Scope</td>
-						<td>Created</td>
-						<td>Read</td>
-						<td>Update</td>
-						<td>Delete</td>
-					</tr>
-				</thead>
-			</table>
-		</div>
 	</div>
 </div>

@@ -3,7 +3,13 @@
 
 .scrolling-content {
     .nav-tabs {
-        border-bottom: none;
+        position: absolute;
+        background: #fff;
+        width: 100%;
+        z-index: 1000;
+    }
+    .tab-content {
+        padding-top: 42px;
     }
 }
 
@@ -20,6 +26,7 @@
                     border-bottom: none;
                     color: @primary-blue;
                     margin-top: 2px;
+                    border-bottom-color: transparent;
                 }
                 &:focus{
                     border-top: none;
@@ -28,6 +35,7 @@
                 }
                 &:hover:focus {
                     color: @primary-blue;
+                    border-bottom-color: transparent;
                 }
             }
             &:hover {
@@ -38,6 +46,13 @@
         &:first-child {
             a {
                 border-left-color: transparent;
+                &:hover {
+                    border-left-color: transparent;
+                }
+                &:focus {
+                    border-left-color: transparent;
+                    outline: 0;
+                }
             }
         }
         a {
@@ -82,6 +97,6 @@
 }
 
 .tab-pane {
-    padding-top: 25px;
-    padding-bottom: 15px;
+    padding: 15px 0;
+    overflow: auto;
 }

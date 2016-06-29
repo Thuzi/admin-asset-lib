@@ -4,307 +4,310 @@
 	Simply, the structure of a single column list with the appropriate css applied.
 -->
 
-<!-- insert the context of nav as needed -->
-<div ng-include="'../templates/nav.html'"></div>
+<div class="main-content">
 
-<div class="main-content"> <!-- add the class "no-nav" if you want it to expand the view width of the container -->
+	<!-- insert the context of nav as needed -->
+	<div ng-include="'../templates/nav.html'"></div>
 
-	<div class="fixed-top-section">
+	<div class="inner-main-content" >
 
-		<div class="col-xs-6 col-sm-6 col-md-4" >
-			<div class="form-group search-wrapper" >
-				<div class="with-icon" >
-					<input type="text" class="form-control" placeholder="Fake Search" />
-					<i class="fa fa-search" ></i>
+		<div class="fixed-top-section">
+
+			<div class="col-xs-6 col-sm-6 col-md-4" >
+				<div class="form-group search-wrapper" >
+					<div class="with-icon" >
+						<input type="text" class="form-control" placeholder="Fake Search" />
+						<i class="fa fa-search" ></i>
+					</div>
 				</div>
 			</div>
+			<div class="col-xs-6 col-sm-6 col-md-8" >
+				<button class="btn btn-success pull-right" type="button" > <i class="fa fa-plus" ></i> Example Add</button>
+			</div>
+
+			<div class="clearfix"></div> <!-- this also has the bottom border attached to it -->
+
 		</div>
-		<div class="col-xs-6 col-sm-6 col-md-8" >
-			<button class="btn btn-success pull-right" type="button" > <i class="fa fa-plus" ></i> Example Add</button>
+
+		<div class="scrolling-content">
+
+
+			<div>
+				<ul class="list-group">
+
+					<li class="list-group-item">
+						<div class="row" >
+							<div class="col-sm-12 col-md-6" >
+								<div class="left-data" >
+									<h4>Nike Football Combine <span class="status active" > <i class="fa fa-check-circle" ></i> Active</span></h4>
+									<p>3/12/16 . 12:30 PM . EST  -  3/12/16 . 5:00 PM . EST</p>
+								</div>
+							</div>
+							<div class="buttons col-sm-12 col-md-6" >
+								<div class="buttons-wrapper" >
+									<button class="btn btn-primary" type="button" >Edit</button>
+									<button class="btn btn-primary" type="button" >Launch</button>
+									<button class="btn btn-primary" type="button" >Metrics</button>
+								</div>
+							</div>
+						</div>
+					</li>
+
+					<li class="list-group-item">
+						<div class="row" >
+							<div class="col-sm-12 col-md-6" >
+								<div class="left-data" >
+									<h4>Nike Football Combine 2 <span class="status inactive" > <i class="fa fa-minus-circle" ></i> Inactive</span></h4>
+									<p>3/12/16 . 12:30 PM . EST  -  3/12/16 . 5:00 PM . EST</p>
+								</div>
+							</div>
+							<div class="buttons col-sm-12 col-md-6" >
+								<div class="buttons-wrapper" >
+									<button class="btn btn-primary" type="button" >Edit</button>
+									<button class="btn btn-primary" type="button" >Launch</button>
+									<button class="btn btn-primary" type="button" >Metrics</button>
+								</div>
+							</div>
+						</div>
+					</li>
+
+					<li class="list-group-item">
+						<div class="row" >
+							<div class="col-sm-12 col-md-6" >
+								<div class="left-data" >
+									<h4>Nike Football Combine 3 <span class="status inactive" > <i class="fa fa-minus-circle" ></i> Inactive</span></h4>
+									<p>3/12/16 . 12:30 PM . EST  -  3/12/16 . 5:00 PM . EST</p>
+								</div>
+							</div>
+							<div class="buttons col-sm-12 col-md-6" >
+								<div class="buttons-wrapper" >
+									<button class="btn btn-primary" type="button" >Edit</button>
+									<button class="btn btn-primary" type="button" >Launch</button>
+									<button class="btn btn-primary" type="button" >Metrics</button>
+								</div>
+							</div>
+						</div>
+					</li>
+
+					<li class="list-group-item">
+						<div class="row" >
+							<div class="col-sm-12 col-md-6" >
+								<div class="left-data" >
+									<h4>Nike Football Combine <span class="status active" > <i class="fa fa-check-circle" ></i> Active</span></h4>
+									<p>3/12/16 . 12:30 PM . EST  -  3/12/16 . 5:00 PM . EST</p>
+								</div>
+							</div>
+							<div class="buttons col-sm-12 col-md-6" >
+								<div class="buttons-wrapper" >
+									<button class="btn btn-primary" type="button" >Edit</button>
+									<button class="btn btn-primary" type="button" >Launch</button>
+									<button class="btn btn-primary" type="button" >Metrics</button>
+								</div>
+							</div>
+						</div>
+					</li>
+
+					<li class="list-group-item">
+						<div class="row" >
+							<div class="col-sm-12 col-md-6" >
+								<div class="left-data" >
+									<h4>Nike Football Combine 2 <span class="status inactive" > <i class="fa fa-minus-circle" ></i> Inactive</span></h4>
+									<p>3/12/16 . 12:30 PM . EST  -  3/12/16 . 5:00 PM . EST</p>
+								</div>
+							</div>
+							<div class="buttons col-sm-12 col-md-6" >
+								<div class="buttons-wrapper" >
+									<button class="btn btn-primary" type="button" >Edit</button>
+									<button class="btn btn-primary" type="button" >Launch</button>
+									<button class="btn btn-primary" type="button" >Metrics</button>
+								</div>
+							</div>
+						</div>
+					</li>
+
+					<li class="list-group-item">
+						<div class="row" >
+							<div class="col-sm-12 col-md-6" >
+								<div class="left-data" >
+									<h4>Nike Football Combine 3 <span class="status inactive" > <i class="fa fa-minus-circle" ></i> Inactive</span></h4>
+									<p>3/12/16 . 12:30 PM . EST  -  3/12/16 . 5:00 PM . EST</p>
+								</div>
+							</div>
+							<div class="buttons col-sm-12 col-md-6" >
+								<div class="buttons-wrapper" >
+									<button class="btn btn-primary" type="button" >Edit</button>
+									<button class="btn btn-primary" type="button" >Launch</button>
+									<button class="btn btn-primary" type="button" >Metrics</button>
+								</div>
+							</div>
+						</div>
+					</li>
+
+					<li class="list-group-item">
+						<div class="row" >
+							<div class="col-sm-12 col-md-6" >
+								<div class="left-data" >
+									<h4>Nike Football Combine <span class="status active" > <i class="fa fa-check-circle" ></i> Active</span></h4>
+									<p>3/12/16 . 12:30 PM . EST  -  3/12/16 . 5:00 PM . EST</p>
+								</div>
+							</div>
+							<div class="buttons col-sm-12 col-md-6" >
+								<div class="buttons-wrapper" >
+									<button class="btn btn-primary" type="button" >Edit</button>
+									<button class="btn btn-primary" type="button" >Launch</button>
+									<button class="btn btn-primary" type="button" >Metrics</button>
+								</div>
+							</div>
+						</div>
+					</li>
+
+					<li class="list-group-item">
+						<div class="row" >
+							<div class="col-sm-12 col-md-6" >
+								<div class="left-data" >
+									<h4>Nike Football Combine 2 <span class="status inactive" > <i class="fa fa-minus-circle" ></i> Inactive</span></h4>
+									<p>3/12/16 . 12:30 PM . EST  -  3/12/16 . 5:00 PM . EST</p>
+								</div>
+							</div>
+							<div class="buttons col-sm-12 col-md-6" >
+								<div class="buttons-wrapper" >
+									<button class="btn btn-primary" type="button" >Edit</button>
+									<button class="btn btn-primary" type="button" >Launch</button>
+									<button class="btn btn-primary" type="button" >Metrics</button>
+								</div>
+							</div>
+						</div>
+					</li>
+
+					<li class="list-group-item">
+						<div class="row" >
+							<div class="col-sm-12 col-md-6" >
+								<div class="left-data" >
+									<h4>Nike Football Combine 3 <span class="status inactive" > <i class="fa fa-minus-circle" ></i> Inactive</span></h4>
+									<p>3/12/16 . 12:30 PM . EST  -  3/12/16 . 5:00 PM . EST</p>
+								</div>
+							</div>
+							<div class="buttons col-sm-12 col-md-6" >
+								<div class="buttons-wrapper" >
+									<button class="btn btn-primary" type="button" >Edit</button>
+									<button class="btn btn-primary" type="button" >Launch</button>
+									<button class="btn btn-primary" type="button" >Metrics</button>
+								</div>
+							</div>
+						</div>
+					</li>
+
+					<li class="list-group-item">
+						<div class="row" >
+							<div class="col-sm-12 col-md-6" >
+								<div class="left-data" >
+									<h4>Nike Football Combine <span class="status active" > <i class="fa fa-check-circle" ></i> Active</span></h4>
+									<p>3/12/16 . 12:30 PM . EST  -  3/12/16 . 5:00 PM . EST</p>
+								</div>
+							</div>
+							<div class="buttons col-sm-12 col-md-6" >
+								<div class="buttons-wrapper" >
+									<button class="btn btn-primary" type="button" >Edit</button>
+									<button class="btn btn-primary" type="button" >Launch</button>
+									<button class="btn btn-primary" type="button" >Metrics</button>
+								</div>
+							</div>
+						</div>
+					</li>
+
+					<li class="list-group-item">
+						<div class="row" >
+							<div class="col-sm-12 col-md-6" >
+								<div class="left-data" >
+									<h4>Nike Football Combine 2 <span class="status inactive" > <i class="fa fa-minus-circle" ></i> Inactive</span></h4>
+									<p>3/12/16 . 12:30 PM . EST  -  3/12/16 . 5:00 PM . EST</p>
+								</div>
+							</div>
+							<div class="buttons col-sm-12 col-md-6" >
+								<div class="buttons-wrapper" >
+									<button class="btn btn-primary" type="button" >Edit</button>
+									<button class="btn btn-primary" type="button" >Launch</button>
+									<button class="btn btn-primary" type="button" >Metrics</button>
+								</div>
+							</div>
+						</div>
+					</li>
+
+					<li class="list-group-item">
+						<div class="row" >
+							<div class="col-sm-12 col-md-6" >
+								<div class="left-data" >
+									<h4>Nike Football Combine 3 <span class="status inactive" > <i class="fa fa-minus-circle" ></i> Inactive</span></h4>
+									<p>3/12/16 . 12:30 PM . EST  -  3/12/16 . 5:00 PM . EST</p>
+								</div>
+							</div>
+							<div class="buttons col-sm-12 col-md-6" >
+								<div class="buttons-wrapper" >
+									<button class="btn btn-primary" type="button" >Edit</button>
+									<button class="btn btn-primary" type="button" >Launch</button>
+									<button class="btn btn-primary" type="button" >Metrics</button>
+								</div>
+							</div>
+						</div>
+					</li>
+
+					<li class="list-group-item">
+						<div class="row" >
+							<div class="col-sm-12 col-md-6" >
+								<div class="left-data" >
+									<h4>Nike Football Combine <span class="status active" > <i class="fa fa-check-circle" ></i> Active</span></h4>
+									<p>3/12/16 . 12:30 PM . EST  -  3/12/16 . 5:00 PM . EST</p>
+								</div>
+							</div>
+							<div class="buttons col-sm-12 col-md-6" >
+								<div class="buttons-wrapper" >
+									<button class="btn btn-primary" type="button" >Edit</button>
+									<button class="btn btn-primary" type="button" >Launch</button>
+									<button class="btn btn-primary" type="button" >Metrics</button>
+								</div>
+							</div>
+						</div>
+					</li>
+
+					<li class="list-group-item">
+						<div class="row" >
+							<div class="col-sm-12 col-md-6" >
+								<div class="left-data" >
+									<h4>Nike Football Combine 2 <span class="status inactive" > <i class="fa fa-minus-circle" ></i> Inactive</span></h4>
+									<p>3/12/16 . 12:30 PM . EST  -  3/12/16 . 5:00 PM . EST</p>
+								</div>
+							</div>
+							<div class="buttons col-sm-12 col-md-6" >
+								<div class="buttons-wrapper" >
+									<button class="btn btn-primary" type="button" >Edit</button>
+									<button class="btn btn-primary" type="button" >Launch</button>
+									<button class="btn btn-primary" type="button" >Metrics</button>
+								</div>
+							</div>
+						</div>
+					</li>
+
+					<li class="list-group-item">
+						<div class="row" >
+							<div class="col-sm-12 col-md-6" >
+								<div class="left-data" >
+									<h4>Nike Football Combine 3 <span class="status inactive" > <i class="fa fa-minus-circle" ></i> Inactive</span></h4>
+									<p>3/12/16 . 12:30 PM . EST  -  3/12/16 . 5:00 PM . EST</p>
+								</div>
+							</div>
+							<div class="buttons col-sm-12 col-md-6" >
+								<div class="buttons-wrapper" >
+									<button class="btn btn-primary" type="button" >Edit</button>
+									<button class="btn btn-primary" type="button" >Launch</button>
+									<button class="btn btn-primary" type="button" >Metrics</button>
+								</div>
+							</div>
+						</div>
+					</li>
+
+				</ul>
+			</div>
 		</div>
 
-		<div class="clearfix"></div> <!-- this also has the bottom border attached to it -->
-
-	</div>
-
-	<div class="scrolling-content">
-
-		<div style="margin-top: 63px;" class="clearfix" ></div>
-
-		<div>
-			<ul class="list-group">
-
-				<li class="list-group-item">
-					<div class="row" >
-						<div class="col-sm-12 col-md-6" >
-							<div class="left-data" >
-								<h4>Nike Football Combine <span class="status active" > <i class="fa fa-check-circle" ></i> Active</span></h4>
-								<p>3/12/16 . 12:30 PM . EST  -  3/12/16 . 5:00 PM . EST</p>
-							</div>
-						</div>
-						<div class="buttons col-sm-12 col-md-6" >
-							<div class="buttons-wrapper" >
-								<button class="btn btn-primary" type="button" >Edit</button>
-								<button class="btn btn-primary" type="button" >Launch</button>
-								<button class="btn btn-primary" type="button" >Metrics</button>
-							</div>
-						</div>
-					</div>
-				</li>
-
-				<li class="list-group-item">
-					<div class="row" >
-						<div class="col-sm-12 col-md-6" >
-							<div class="left-data" >
-								<h4>Nike Football Combine 2 <span class="status inactive" > <i class="fa fa-minus-circle" ></i> Inactive</span></h4>
-								<p>3/12/16 . 12:30 PM . EST  -  3/12/16 . 5:00 PM . EST</p>
-							</div>
-						</div>
-						<div class="buttons col-sm-12 col-md-6" >
-							<div class="buttons-wrapper" >
-								<button class="btn btn-primary" type="button" >Edit</button>
-								<button class="btn btn-primary" type="button" >Launch</button>
-								<button class="btn btn-primary" type="button" >Metrics</button>
-							</div>
-						</div>
-					</div>
-				</li>
-
-				<li class="list-group-item">
-					<div class="row" >
-						<div class="col-sm-12 col-md-6" >
-							<div class="left-data" >
-								<h4>Nike Football Combine 3 <span class="status inactive" > <i class="fa fa-minus-circle" ></i> Inactive</span></h4>
-								<p>3/12/16 . 12:30 PM . EST  -  3/12/16 . 5:00 PM . EST</p>
-							</div>
-						</div>
-						<div class="buttons col-sm-12 col-md-6" >
-							<div class="buttons-wrapper" >
-								<button class="btn btn-primary" type="button" >Edit</button>
-								<button class="btn btn-primary" type="button" >Launch</button>
-								<button class="btn btn-primary" type="button" >Metrics</button>
-							</div>
-						</div>
-					</div>
-				</li>
-
-				<li class="list-group-item">
-					<div class="row" >
-						<div class="col-sm-12 col-md-6" >
-							<div class="left-data" >
-								<h4>Nike Football Combine <span class="status active" > <i class="fa fa-check-circle" ></i> Active</span></h4>
-								<p>3/12/16 . 12:30 PM . EST  -  3/12/16 . 5:00 PM . EST</p>
-							</div>
-						</div>
-						<div class="buttons col-sm-12 col-md-6" >
-							<div class="buttons-wrapper" >
-								<button class="btn btn-primary" type="button" >Edit</button>
-								<button class="btn btn-primary" type="button" >Launch</button>
-								<button class="btn btn-primary" type="button" >Metrics</button>
-							</div>
-						</div>
-					</div>
-				</li>
-
-				<li class="list-group-item">
-					<div class="row" >
-						<div class="col-sm-12 col-md-6" >
-							<div class="left-data" >
-								<h4>Nike Football Combine 2 <span class="status inactive" > <i class="fa fa-minus-circle" ></i> Inactive</span></h4>
-								<p>3/12/16 . 12:30 PM . EST  -  3/12/16 . 5:00 PM . EST</p>
-							</div>
-						</div>
-						<div class="buttons col-sm-12 col-md-6" >
-							<div class="buttons-wrapper" >
-								<button class="btn btn-primary" type="button" >Edit</button>
-								<button class="btn btn-primary" type="button" >Launch</button>
-								<button class="btn btn-primary" type="button" >Metrics</button>
-							</div>
-						</div>
-					</div>
-				</li>
-
-				<li class="list-group-item">
-					<div class="row" >
-						<div class="col-sm-12 col-md-6" >
-							<div class="left-data" >
-								<h4>Nike Football Combine 3 <span class="status inactive" > <i class="fa fa-minus-circle" ></i> Inactive</span></h4>
-								<p>3/12/16 . 12:30 PM . EST  -  3/12/16 . 5:00 PM . EST</p>
-							</div>
-						</div>
-						<div class="buttons col-sm-12 col-md-6" >
-							<div class="buttons-wrapper" >
-								<button class="btn btn-primary" type="button" >Edit</button>
-								<button class="btn btn-primary" type="button" >Launch</button>
-								<button class="btn btn-primary" type="button" >Metrics</button>
-							</div>
-						</div>
-					</div>
-				</li>
-
-				<li class="list-group-item">
-					<div class="row" >
-						<div class="col-sm-12 col-md-6" >
-							<div class="left-data" >
-								<h4>Nike Football Combine <span class="status active" > <i class="fa fa-check-circle" ></i> Active</span></h4>
-								<p>3/12/16 . 12:30 PM . EST  -  3/12/16 . 5:00 PM . EST</p>
-							</div>
-						</div>
-						<div class="buttons col-sm-12 col-md-6" >
-							<div class="buttons-wrapper" >
-								<button class="btn btn-primary" type="button" >Edit</button>
-								<button class="btn btn-primary" type="button" >Launch</button>
-								<button class="btn btn-primary" type="button" >Metrics</button>
-							</div>
-						</div>
-					</div>
-				</li>
-
-				<li class="list-group-item">
-					<div class="row" >
-						<div class="col-sm-12 col-md-6" >
-							<div class="left-data" >
-								<h4>Nike Football Combine 2 <span class="status inactive" > <i class="fa fa-minus-circle" ></i> Inactive</span></h4>
-								<p>3/12/16 . 12:30 PM . EST  -  3/12/16 . 5:00 PM . EST</p>
-							</div>
-						</div>
-						<div class="buttons col-sm-12 col-md-6" >
-							<div class="buttons-wrapper" >
-								<button class="btn btn-primary" type="button" >Edit</button>
-								<button class="btn btn-primary" type="button" >Launch</button>
-								<button class="btn btn-primary" type="button" >Metrics</button>
-							</div>
-						</div>
-					</div>
-				</li>
-
-				<li class="list-group-item">
-					<div class="row" >
-						<div class="col-sm-12 col-md-6" >
-							<div class="left-data" >
-								<h4>Nike Football Combine 3 <span class="status inactive" > <i class="fa fa-minus-circle" ></i> Inactive</span></h4>
-								<p>3/12/16 . 12:30 PM . EST  -  3/12/16 . 5:00 PM . EST</p>
-							</div>
-						</div>
-						<div class="buttons col-sm-12 col-md-6" >
-							<div class="buttons-wrapper" >
-								<button class="btn btn-primary" type="button" >Edit</button>
-								<button class="btn btn-primary" type="button" >Launch</button>
-								<button class="btn btn-primary" type="button" >Metrics</button>
-							</div>
-						</div>
-					</div>
-				</li>
-
-				<li class="list-group-item">
-					<div class="row" >
-						<div class="col-sm-12 col-md-6" >
-							<div class="left-data" >
-								<h4>Nike Football Combine <span class="status active" > <i class="fa fa-check-circle" ></i> Active</span></h4>
-								<p>3/12/16 . 12:30 PM . EST  -  3/12/16 . 5:00 PM . EST</p>
-							</div>
-						</div>
-						<div class="buttons col-sm-12 col-md-6" >
-							<div class="buttons-wrapper" >
-								<button class="btn btn-primary" type="button" >Edit</button>
-								<button class="btn btn-primary" type="button" >Launch</button>
-								<button class="btn btn-primary" type="button" >Metrics</button>
-							</div>
-						</div>
-					</div>
-				</li>
-
-				<li class="list-group-item">
-					<div class="row" >
-						<div class="col-sm-12 col-md-6" >
-							<div class="left-data" >
-								<h4>Nike Football Combine 2 <span class="status inactive" > <i class="fa fa-minus-circle" ></i> Inactive</span></h4>
-								<p>3/12/16 . 12:30 PM . EST  -  3/12/16 . 5:00 PM . EST</p>
-							</div>
-						</div>
-						<div class="buttons col-sm-12 col-md-6" >
-							<div class="buttons-wrapper" >
-								<button class="btn btn-primary" type="button" >Edit</button>
-								<button class="btn btn-primary" type="button" >Launch</button>
-								<button class="btn btn-primary" type="button" >Metrics</button>
-							</div>
-						</div>
-					</div>
-				</li>
-
-				<li class="list-group-item">
-					<div class="row" >
-						<div class="col-sm-12 col-md-6" >
-							<div class="left-data" >
-								<h4>Nike Football Combine 3 <span class="status inactive" > <i class="fa fa-minus-circle" ></i> Inactive</span></h4>
-								<p>3/12/16 . 12:30 PM . EST  -  3/12/16 . 5:00 PM . EST</p>
-							</div>
-						</div>
-						<div class="buttons col-sm-12 col-md-6" >
-							<div class="buttons-wrapper" >
-								<button class="btn btn-primary" type="button" >Edit</button>
-								<button class="btn btn-primary" type="button" >Launch</button>
-								<button class="btn btn-primary" type="button" >Metrics</button>
-							</div>
-						</div>
-					</div>
-				</li>
-
-				<li class="list-group-item">
-					<div class="row" >
-						<div class="col-sm-12 col-md-6" >
-							<div class="left-data" >
-								<h4>Nike Football Combine <span class="status active" > <i class="fa fa-check-circle" ></i> Active</span></h4>
-								<p>3/12/16 . 12:30 PM . EST  -  3/12/16 . 5:00 PM . EST</p>
-							</div>
-						</div>
-						<div class="buttons col-sm-12 col-md-6" >
-							<div class="buttons-wrapper" >
-								<button class="btn btn-primary" type="button" >Edit</button>
-								<button class="btn btn-primary" type="button" >Launch</button>
-								<button class="btn btn-primary" type="button" >Metrics</button>
-							</div>
-						</div>
-					</div>
-				</li>
-
-				<li class="list-group-item">
-					<div class="row" >
-						<div class="col-sm-12 col-md-6" >
-							<div class="left-data" >
-								<h4>Nike Football Combine 2 <span class="status inactive" > <i class="fa fa-minus-circle" ></i> Inactive</span></h4>
-								<p>3/12/16 . 12:30 PM . EST  -  3/12/16 . 5:00 PM . EST</p>
-							</div>
-						</div>
-						<div class="buttons col-sm-12 col-md-6" >
-							<div class="buttons-wrapper" >
-								<button class="btn btn-primary" type="button" >Edit</button>
-								<button class="btn btn-primary" type="button" >Launch</button>
-								<button class="btn btn-primary" type="button" >Metrics</button>
-							</div>
-						</div>
-					</div>
-				</li>
-
-				<li class="list-group-item">
-					<div class="row" >
-						<div class="col-sm-12 col-md-6" >
-							<div class="left-data" >
-								<h4>Nike Football Combine 3 <span class="status inactive" > <i class="fa fa-minus-circle" ></i> Inactive</span></h4>
-								<p>3/12/16 . 12:30 PM . EST  -  3/12/16 . 5:00 PM . EST</p>
-							</div>
-						</div>
-						<div class="buttons col-sm-12 col-md-6" >
-							<div class="buttons-wrapper" >
-								<button class="btn btn-primary" type="button" >Edit</button>
-								<button class="btn btn-primary" type="button" >Launch</button>
-								<button class="btn btn-primary" type="button" >Metrics</button>
-							</div>
-						</div>
-					</div>
-				</li>
-
-			</ul>
-		</div>
 	</div>
 </div>
