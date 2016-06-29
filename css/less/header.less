@@ -56,6 +56,12 @@
 			padding: 0;
 			background: transparent;
 			font-size: .8em;
+			&:hover {
+				background: #424242;
+			}
+			&:focus {
+				background: #424242;
+			}
 		}
 		img {
 			margin-left: 15px;
@@ -97,6 +103,11 @@
 	background: @light-grey;
 	border: 1px solid @medium-grey;
     border-top: none;
+	width: 100%;
+    top: 50px;
+    left: 0;
+    position: absolute;
+    z-index: 1002;
 	.desktop-logout {
 		display: none;
 	}

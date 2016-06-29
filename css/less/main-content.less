@@ -15,9 +15,13 @@
     padding-top: 81px;
 	position: relative;
 	.scrolling-content {
-		overflow-x: scroll;
+		overflow-y: scroll;
+    	overflow-x: hidden;
 		// height in set in the: things-that-dont-work-in-less.css
 	}
+	.scroll-with-padding {
+        padding: 15px;
+    }
 	.fixed-top-section {
 		padding: 15px 0 0 0;
 		position: absolute;
@@ -31,6 +35,21 @@
 			padding-bottom: 15px;
 		}
 	}
+}
+
+.pagination {
+    margin: 15px;
+}
+
+.no-content {
+    border: 2px dashed #ddd;
+    width: 96%;
+    margin: 2%;
+    padding: 100px 20px;
+    text-align: center;
+    color: #999;
+    border-radius: 6px;
+    clear: both;
 }
 
 @media (min-width: 768px) {
