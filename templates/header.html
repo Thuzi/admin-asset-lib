@@ -10,16 +10,33 @@
 	Sadly, some of the nav had to be doubled up to make the mobile layout possible.
 -->
 
+<!--
+If you want to use bootstrap ui alerts
 
-<!-- <uib-alert type="success" close="closeAlert($index)">
+<uib-alert type="success" close="closeAlert($index)">
 	<h3><i class="fa fa-check-circle" ></i>Success</h3>
 	<span>This is the message</span>
-</uib-alert> -->
-<!-- <uib-alert type="danger" close="closeAlert($index)">
+</uib-alert>
+
+<uib-alert type="danger" close="closeAlert($index)">
 	<h3><i class="fa fa-exclamation-circle" ></i>Error</h3>
 	<span>This is the message</span>
-</uib-alert> -->
+</uib-alert>
+-->
 
+<!--
+If you want to use custom alerts
+
+<div class="alert alert-{{options.style}} alert-dismissible" ng-class="{ in : showAlert == true }" role="alert">
+    <button ng-click="showAlert = false" type="button" class="close" aria-label="Close"><span aria-hidden="true"><i class="fa fa-times"></i></span></button>
+    <h3>
+        <i ng-if="options.style == 'success'" class="fa fa-check-circle"></i>
+        <i ng-if="options.style == 'danger'" class="fa fa-exclamation-circle"></i>
+        {{options.header}}
+    </h3>
+    <span>{{options.body}}</span>
+</div>
+-->
 
 <nav class="navbar navbar-default">
 	<div class="container">
