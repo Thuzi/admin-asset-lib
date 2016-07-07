@@ -23,9 +23,8 @@
                 color: @primary-blue;
                 &:hover {
                     border-top: none;
-                    border-bottom: none;
                     color: @primary-blue;
-                    margin-top: 2px;
+                    margin-top: 1px;
                     border-bottom-color: transparent;
                 }
                 &:focus{
@@ -60,6 +59,11 @@
             border-radius: 0;
             color: @dark-grey;
             font-weight: 700;
+            margin-right: 0;
+            &:hover {
+                border-color: #f9f9f9 #f9f9f9 #dddddd;
+                background-color: #f9f9f9;
+            }
             .has-error {
                 color: @danger-red;
             }
