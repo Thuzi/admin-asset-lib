@@ -3,13 +3,13 @@
 
 .scrolling-content {
     .nav-tabs {
-        position: absolute;
+        // position: absolute;
         background: #fff;
         width: 100%;
         z-index: 1000;
     }
     .tab-content {
-        padding-top: 42px;
+        // padding-top: 42px;
     }
 }
 
@@ -73,12 +73,22 @@
 
 .sub-tabs {
     border-top: none;
+    margin-top: -15px;
+    margin-left: -15px;
+    margin-right: -15px;
     li {
         &.active {
             a {
                 border: none;
                 &:hover {
                     border: none;
+                    margin-top: 0px;
+                }
+                &:focus{
+                    margin-top: 0px;
+                    outline: 0;
+                    border-left: none;
+                    border-right: none;
                 }
                 &::after {
                     content: "";
@@ -86,6 +96,7 @@
                     height: 0;
                     position: absolute;
                     bottom: -11px;
+                    left: 30%;
                     border-left: 10px solid transparent;
                     border-right: 10px solid transparent;
                     border-top: 10px solid #ddd;
