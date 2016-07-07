@@ -3,6 +3,10 @@
 	height: calc(100% - 50px);
 }
 
+.sub-tabs li.active a::after {
+	left: calc(50% - 10px);
+}
+
 .loader {
 	margin-top: calc(50vh - 30px);
 	margin-left: calc(50vw - 30px);
