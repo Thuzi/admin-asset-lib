@@ -1,7 +1,7 @@
 
-.side-nav-wrapper {
+/*.side-nav-wrapper {
 	height: calc(100% - 50px);
-}
+}*/
 
 .sub-tabs li.active a::after {
 	left: calc(50% - 10px);
