@@ -186,3 +186,32 @@
         }
     }
 }
+.grouped-inputs-with-toggle {
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    margin-bottom: 15px;
+    .grouped-inputs-header {
+        background: #fff;
+        margin: 0;
+
+        label {
+            padding: 10px 15px 10px 35px;
+            display: block;
+        }
+    }
+    .grouped-inputs-body {
+        overflow: hidden;
+        height: 0;
+        padding: 0;
+    }
+    &.open {
+        > .grouped-inputs-header {
+            border-bottom: 1px solid #ddd;
+        }
+        > .grouped-inputs-body {
+            padding: 15px 15px 0 15px;
+            overflow: auto;
+            height: auto;
+        }
+    }
+}
