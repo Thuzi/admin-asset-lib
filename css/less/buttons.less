@@ -51,8 +51,12 @@
 }
 .btn-secondary {
     background: @white-bg;
-    border: 1px solid @medium-grey;
+    border: none;
     color: @dark-grey;
+    &:active {
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
     &:hover {
         color: @primary-blue;
     }
