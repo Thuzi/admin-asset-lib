@@ -61,7 +61,7 @@ angular.module('tzdateTime.zonePicker', [])
 
                 $scope.selectedZone = index;
 
-                $scope.model.zone(zone);
+                $scope.model.utcOffset(zone);
                 $scope.model.hour(hour);
                 $scope.model.day(day);
                 $scope.showZonePicker = false;
