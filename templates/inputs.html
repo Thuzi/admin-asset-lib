@@ -140,13 +140,57 @@
 						</div>
 					</div>
 
-					<div class="col-sm-6 form-group no-validation" >
-	                    <label>Date Time with Zone</label>
-	                    <div>
-	                        <div date-time-zone-picker model="startDate" min-date="minStart"></div>
-	                    </div>
-	                    <div class="error-wrapper"></div>
-	                </div>
+					<div class="col-sm-12" >
+						<div class="grouped-inputs-with-toggle" ng-class="{ open: stream.settings.tagging.shares.facebook.enable }">
+					        <div class="checkbox grouped-inputs-header">
+					            <label>
+					                <input type="checkbox" ng-model="stream.settings.tagging.shares.facebook.enable" name="taggingFacebookEnable" /> Enable Facebook Share
+					            </label>
+					        </div>
+					        <div class="row grouped-inputs-body">
+					            <div class="col-sm-6 form-group">
+					                <label> Facebook Title </label>
+					                <div class="with-icon">
+					                    <input type="text"
+					                           tabindex="1"
+					                           class="form-control"
+					                           ng-model="stream.settings.tagging.shares.facebook.title"
+					                           name="taggingFacebookTitle"
+					                           ng-disabled="!stream.settings.tagging.shares.facebook.enable"
+					                           ng-required="stream.settings.tagging.shares.facebook.enable" />
+					                    <i ng-class="{ 'fa-check-circle': shares.taggingFacebookTitle.$valid, 'fa-exclamation-circle': !shares.taggingFacebookTitle.$valid }"
+					                       class="fa"></i>
+					                </div>
+					                <div class="error-wrapper">
+					                    <div ng-messages="shares.taggingFacebookTitle.$error"
+					                         ng-if='shares.taggingFacebookTitle.$dirty || form.$submitted'>
+					                        <div ng-message="required">required</div>
+					                    </div>
+					                </div>
+					            </div>
+					            <div class="col-sm-6 form-group">
+					                <label for="taggingFacebookDescription"> Facebook Description </label>
+					                <div class="with-icon">
+					                    <input type="text"
+					                           tabindex="1"
+					                           class="form-control"
+					                           ng-model="stream.settings.tagging.shares.facebook.text"
+					                           name="taggingFacebookDescription"
+					                           ng-disabled="!stream.settings.tagging.shares.facebook.enable"
+					                           ng-required="stream.settings.tagging.shares.facebook.enable" />
+					                    <i ng-class="{ 'fa-check-circle': shares.taggingFacebookDescription.$valid, 'fa-exclamation-circle': !shares.taggingFacebookDescription.$valid }"
+					                       class="fa"></i>
+					                </div>
+					                <div class="error-wrapper">
+					                    <div ng-messages="shares.taggingFacebookDescription.$error"
+					                         ng-if='shares.taggingFacebookDescription.$dirty || form.$submitted'>
+					                        <div ng-message="required">required</div>
+					                    </div>
+					                </div>
+					            </div>
+					        </div>
+					    </div>
+					</div>
 
 				</form>
 

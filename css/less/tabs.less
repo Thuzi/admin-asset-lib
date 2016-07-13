@@ -3,8 +3,7 @@
 
 .scrolling-content {
     .nav-tabs {
-        // position: absolute;
-        background: #fff;
+        background: @white-bg;
         width: 100%;
         z-index: 1000;
     }
@@ -61,8 +60,8 @@
             font-weight: 700;
             margin-right: 0;
             &:hover {
-                border-color: #f9f9f9 #f9f9f9 #dddddd;
-                background-color: #f9f9f9;
+                border-color: @very-light-grey @very-light-grey @light-grey;
+                background-color: @very-light-grey;
             }
             .has-error {
                 color: @danger-red;
@@ -103,7 +102,7 @@
                     bottom: -12px;
                     border-left: 10px solid transparent;
                     border-right: 10px solid transparent;
-                    border-top: 10px solid #ddd;
+                    border-top: 10px solid @light-grey;
                 }
             }
         }
