@@ -2,7 +2,7 @@
 'use strict';
 
 var App = angular.module('App',
-    ['ngRoute', 'ui.bootstrap', 'ngAnimate', 'ngMessages']);
+    ['ngRoute', 'ui.bootstrap', 'ngAnimate', 'ngMessages', 'tzDateTime']);
 
 App.config(['$routeProvider', '$locationProvider', '$httpProvider',
     function ($routeProvider, $locationProvider, $httpProvider) {
