@@ -90,7 +90,7 @@
 .date-time-zone {
     position: relative;
     .form-control[disabled] {
-        color: #333;
+        color: @dark-grey;
     }
     .buttons-wrapper {
         text-align: right;
@@ -107,10 +107,10 @@
             margin: 0;
             background: none;
             i {
-                color: #333;
+                color: @dark-grey;
             }
             &.open i {
-                color: #666;
+                color: @medium-grey;
             }
         }
     }
@@ -118,7 +118,7 @@
 .dateInvalid {
     .date-time-zone {
         input, .input-group-btn button {
-            border-bottom-color: red !important;
+            border-bottom-color: @danger-red !important;
         }
 
     }
@@ -132,25 +132,25 @@
     right: 0;
     top: 34px;
     width: auto;
-    box-shadow: 0px 5px 17px #ddd;
+    box-shadow: 0px 5px 17px @medium-grey;
     .btn {
         min-width: 0;
         padding: 6px 12px;
     }
     table th button i,
     .btn-default.active {
-        color: #666;
+        color: @medium-grey;
     }
 }
 .time-picker {
     position: absolute;
     right: 0;
     top: 34px;
-    background: #fff;
+    background: @white-bg;
     z-index: 100;
     width: 275px;
-    border: 1px solid #ddd;
-    box-shadow: 0px 5px 17px #ddd;
+    border: 1px solid @medium-grey;
+    box-shadow: 0px 5px 17px @medium-grey;
     .btn {
         min-width: 100%;
     }
@@ -169,29 +169,29 @@
     position: absolute;
     right: 0;
     top: 34px;
-    background: #fff;
-    border: 1px solid #ddd;
+    background: @white-bg;
+    border: 1px solid @medium-grey;
     border-radius: 3px;
     z-index: 100;
     width: 100%;
     list-style-type: none;
     margin: 0;
     padding: 5px 0;
-    box-shadow: 0px 5px 17px #ddd;
+    box-shadow: 0px 5px 17px @medium-grey;
     li {
         padding: 3px 10px;
         cursor: pointer;
         &.selected {
-            background: #ddd;
+            background: @medium-grey;
         }
     }
 }
 .grouped-inputs-with-toggle {
-    border: 1px solid #ddd;
+    border: 1px solid @medium-grey;
     border-radius: 3px;
     margin-bottom: 15px;
     .grouped-inputs-header {
-        background: #fff;
+        background: @white-bg;
         margin: 0;
 
         label {
@@ -206,7 +206,7 @@
     }
     &.open {
         > .grouped-inputs-header {
-            border-bottom: 1px solid #ddd;
+            border-bottom: 1px solid @medium-grey;
         }
         > .grouped-inputs-body {
             padding: 15px 15px 0 15px;
