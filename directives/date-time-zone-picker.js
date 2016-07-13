@@ -5,7 +5,7 @@ angular.module('tzdateTime.zonePicker', [])
     .directive('dateTimeZonePicker', ['$location', function($location) {
     return {
         restrict: 'AE',
-        template: '/bower_components/admin-asset-lib/directives/date-time-zone-picker.html',
+        templateUrl: '/bower_components/admin-asset-lib/directives/date-time-zone-picker.html',
         controller: ['$scope', function ($scope) {
 
             $scope.dateTimeZone = '';
