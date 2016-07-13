@@ -2,10 +2,10 @@
 angular.module("tzDateTime", ['tzdateTime.zonePicker']);
 
 angular.module('tzdateTime.zonePicker', [])
-    .directive('dateTimeZonePicker', function () {
+    .directive('dateTimeZonePicker', ['$location', function($location) {
     return {
         restrict: 'AE',
-        templateUrl: '/directives/date-time-zone-picker.html',
+        template: '<div class="input-wrapper date-time-zone"><div class="buttons-wrapper"><button ng-class="{ open: showDatePicker }" ng-click="toggleDatePicker()" type="button"><i class="fa fa-calendar"></i></button>		        <button ng-class="{ open: showTimePicker }" ng-click="toggleTimePicker()" type="button"><i class="fa fa-clock-o"></i></button><button ng-class="{ open: showZonePicker }" ng-click="toggleZonePicker()" type="button"><i class="fa fa-globe"></i></button></div><uib-datepicker ng-model="date" ng-show="showDatePicker" min-date="minDate" show-weeks="false" class="well well-sm date-picker"></uib-datepicker><uib-timepicker class="time-picker" ng-model="time" ng-show="showTimePicker" ng-change="changed()"></uib-timepicker><ul class="zone-picker" ng-show="showZonePicker"><li ng-repeat="zone in zones" ng-class="{selected: $index === selectedZone}" ng-click="selectZone(zone.value, $index)"> {{zone.label}} </li></ul><input type="text" class="form-control" ng-model="dateTimeZone" disabled></div>',
         controller: ['$scope', function ($scope) {
 
             $scope.dateTimeZone = '';
@@ -97,4 +97,4 @@ angular.module('tzdateTime.zonePicker', [])
             minDate: '=minDate'
         }
     };
-});
+}]);
