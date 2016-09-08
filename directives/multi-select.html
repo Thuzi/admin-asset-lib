@@ -1,0 +1,11 @@
+
+<div class="multi-select-wrapper" >
+    <ul class="list-of-selected" >
+        <li ng-repeat="item in selectedItems track by $index ">{{item}} <i class="fa fa-times" ng-click="removeItem($index)"></i></li>
+    </ul>
+    <input ng-keydown="keydown($event)"
+           type="text"
+           ng-model="selected"
+           uib-typeahead="item.name for item in list.items | filter:$viewValue | limitTo:10"
+           class="form-control" />
+</div>

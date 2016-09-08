@@ -220,3 +220,55 @@
         }
     }
 }
+
+/* ============================================== multi select == */
+.multi-select-wrapper {
+    border: 1px solid @medium-grey;
+    border-radius: @input-border-radius;
+    display: block;
+    width: 100%;
+    min-height: 34px;
+    padding: 4px 5px 0 5px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555555;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    overflow: auto;
+    input {
+        border: none;
+        width: 33%;
+        box-shadow: none;
+        -webkit-box-shadow: none;
+        border-radius: 0;
+        height: 23px;
+        margin-bottom: 5px;
+        outline: 0;
+        padding: 6px 4px;
+        &:focus {
+            outline: 0;
+            -webkit-box-shadow: none;
+            box-shadow: none;
+        }
+    }
+    .list-of-selected {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        li {
+            float: left;
+            border-radius: 4px;
+            background: #eee;
+            padding: 3px 10px;
+            margin: 0 5px 5px 0;
+            font-size: .9em;
+            i:hover {
+                cursor: pointer;
+                color: @danger-red;
+            }
+        }
+    }
+}
