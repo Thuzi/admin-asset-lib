@@ -5,7 +5,7 @@ angular.module('tzMultiSelect.input', [])
     .directive('tzMultiSelectInput', ['$location', function($location) {
     return {
         restrict: 'AE',
-        templateUrl: '/templates/directives/multi-select.html',
+        templateUrl: '/bower_components/admin-asset-lib/directives/multi-select.html',
         controller: ['$scope', '$location', '$routeParams', function ($scope, $location, $routeParams) {
 
             $scope.keydown = function (e) {
