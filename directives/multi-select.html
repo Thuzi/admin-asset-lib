@@ -1,7 +1,7 @@
 
 <div class="multi-select-wrapper" >
     <ul class="list-of-selected" >
-        <li ng-repeat="item in selectedItems track by $index ">{{item}} <i class="fa fa-times" ng-click="removeItem($index)"></i></li>
+        <li ng-repeat="item in selectedItems track by $index ">{{item.name}} <i class="fa fa-times" ng-click="removeItem($index)"></i></li>
     </ul>
     <input ng-keydown="keydown($event)"
            type="text"

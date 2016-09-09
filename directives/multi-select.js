@@ -12,7 +12,8 @@ angular.module('tzMultiSelect.input', [])
                 if (e.keyCode == 13) {
                     e.preventDefault();
                     if (_.findLastIndex($scope.list.items, { name: e.target.value }) != -1) {
-                        $scope.addItemToList(e.target.value);
+                        var item = _.findWhere($scope.list.items, { name: e.target.value });
+                        $scope.addItemToList(item);
                         e.target.value = '';
                     }
                 }
