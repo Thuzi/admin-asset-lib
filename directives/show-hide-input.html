@@ -1,0 +1,9 @@
+
+<input type="{{hide ? 'password' : 'text'}}"
+       tabindex="1"
+       class="form-control"
+       ng-model="secret"
+       name="{{name}}"
+       autocomplete="off"
+       ng-required="{{required}}" />
+<span class="input-group-addon" style="padding: 0;"> <button type="button" style="padding: 6px 18px; min-width: 85px;" class="btn btn-primary" ng-click="showHideSecret();">{{hide ? 'Show' : 'Hide'}}</button></span>
