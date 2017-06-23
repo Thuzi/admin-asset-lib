@@ -6,7 +6,7 @@ angular.module('tzMultiSelect.input', [])
     return {
         restrict: 'AE',
         templateUrl: '/bower_components/admin-asset-lib/directives/multi-select.html',
-        controller: ['$scope', '$location', '$routeParams', function ($scope, $location, $routeParams) {
+        controller: ['$scope', '$location', function ($scope, $location) {
 
             $scope.keydown = function (e) {
                 if (e.keyCode == 13) {
