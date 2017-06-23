@@ -8,6 +8,8 @@ angular.module('tzMultiSelect.input', [])
         templateUrl: '/bower_components/admin-asset-lib/directives/multi-select.html',
         controller: ['$scope', '$location', function ($scope, $location) {
 
+            $scope.selectedItems = [];
+
             $scope.keydown = function (e) {
                 if (e.keyCode == 13) {
                     e.preventDefault();
