@@ -19,11 +19,32 @@ angular.module('tzdateTime.zonePicker', [])
 
             $scope.zones = [
                 { label: 'UTC - Coordinated Universal Time (+0:00)', value: '+00:00' },
-                { label: 'EDT - Eastern Daylight (-4:00)', value: '-04:00' },
-                { label: 'EST/CDT - Eastern Standard/Central Daylight (-5:00)', value: '-05:00' },
-                { label: 'CST/MDT - Central Standard/Mountain Daylight (-6:00)', value: '-06:00' },
-                { label: 'MST/PDT - Mountain Standard/Pacific Daylight (-7:00)', value: '-07:00' },
-                { label: 'PST - Pacific Standard (-8:00)', value: '-08:00' }
+                { label: 'AEDT - Australian Eastern Daylight Time (+11:00)', value: '+11:00'}
+                { label: 'AEST - Australian Eastern Standard Time (+10:00)', value: '+10:00'}
+                { label: 'KST - Korea Standard Time (+09:00)', value: '+09:00'}
+                { label: 'JST - Japan Standard Time (+09:00)', value: '+09:00'}
+                { label: 'CST - China Standard Time (+08:00)', value: '+08:00'}
+                { label: 'MYT - Malaysia Time (+08:00)', value: '+08:00'}
+                { label: 'WIB - Western Indonesian Time (+07:00)', value: '+07:00'}
+                { label: 'ICT - Indochina Time (+07:00)', value: '+07:00'}
+                { label: 'IST - India Standard Time (+05:30)', value: '+05:30'}
+                { label: 'GST - Gulf Standard Time (+04:00)', value: '+04:00'}
+                { label: 'MSK - Moscow Standard Time (+03:00)', value: '+03:00'}
+                { label: 'SAST - South Africa Standard Time (+02:00)', value: '+02:00'}
+                { label: 'EET - Eastern European Time (+02:00)', value: '+02:00'}
+                { label: 'UTC - Coordinated Universal Time (+00:00)', value: '+00:00'}
+                { label: 'BRT - Brasilia Time (-03:00)', value: '-03:00'}
+                { label: 'ART - Argentina Time (-03:00)', value: '-03:00'}
+                { label: 'EDT - Eastern Daylight Time (-04:00)', value: '-04:00'}
+                { label: 'EST - Eastern Standard Time (-05:00)', value: '-05:00'}
+                { label: 'CDT - Central Daylight Time (-05:00)', value: '-05:00'}
+                { label: 'COT - Columbia Time (-05:00)', value: '-05:00'}
+                { label: 'PET - Peru Time (-05:00)', value: '-05:00'}
+                { label: 'MDT - Mountain Daylight Time (-06:00)', value: '-06:00'}
+                { label: 'CST - Central Standard Time (-06:00)', value: '-06:00'}
+                { label: 'PDT - Pacific Daylight Time (-07:00)', value: '-07:00'}
+                { label: 'MST - Mountain Standard Time (-07:00)', value: '-07:00'}
+                { label: 'PST - Pacific Standard Time (-08:00)', value: '-08:00'}
             ];
 
             $scope.showDatePicker = false;
