@@ -23,7 +23,7 @@ angular.module('tzMultiSelect.input', [])
                 var alreadySelected = $scope.selectedItems.find(function (item) { return item.name === value });
 
                 if (brand && !alreadySelected) {
-                    $scope.selectedItems.push(item);
+                    $scope.selectedItems.push(brand);
                 }
             };
 
