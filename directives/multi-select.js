@@ -13,16 +13,16 @@ angular.module('tzMultiSelect.input', [])
             $scope.keydown = function (e) {
                 if (e.keyCode == 13) {
                     e.preventDefault();
-                    if (_.findLastIndex($scope.list.items, { name: e.target.value }) != -1) {
-                        var item = _.findWhere($scope.list.items, { name: e.target.value });
-                        $scope.addItemToList(item);
-                        e.target.value = '';
-                    }
-                }
+                    $scope.addToList(e.target.value);
+                    e.target.value = '';
+                };
             };
 
-            $scope.addItemToList = function (item) {
-                if (_.contains($scope.selectedItems, item) == false) {
+            $scope.addToList = function (value) {
+                var brand = $scope.list.items.find(function (item) { return item.name === value });
+                var alreadySelected = $scope.selectedItems.find(function (item) { return item.name === value });
+
+                if (brand && !alreadySelected) {
                     $scope.selectedItems.push(item);
                 }
             };
@@ -30,6 +30,10 @@ angular.module('tzMultiSelect.input', [])
             $scope.removeItem = function (index) {
                 $scope.selectedItems.splice(index, 1);
             };
+
+            $scope.selectedItems.forEach(function (item) {
+                $scope.addToList(item.name);
+            });
 
         }],
         scope: {
