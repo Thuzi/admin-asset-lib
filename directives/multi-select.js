@@ -21,8 +21,9 @@ angular.module('tzMultiSelect.input', [])
             $scope.addToList = function (value) {
                 var brand = $scope.list.items.find(function (item) { return item.name === value });
                 var alreadySelected = $scope.selectedItems.find(function (item) { return item.name === value });
-
+                console.log(2)
                 if (brand && !alreadySelected) {
+                    console.log(3)
                     $scope.selectedItems.push(brand);
                 }
             };
@@ -32,6 +33,7 @@ angular.module('tzMultiSelect.input', [])
             };
 
             $scope.selectedItems.forEach(function (item) {
+                console.log(1)
                 $scope.addToList(item.name);
             });
 
