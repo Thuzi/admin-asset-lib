@@ -15,7 +15,6 @@ angular.module('tzdateTime.zonePicker', [])
 
             $scope.date = '';
             $scope.time = '';
-            $scope.zone = '';
 
             $scope.zones = [
                 { label: 'UTC - Coordinated Universal Time (+0:00)', value: '+00:00' },
@@ -82,6 +81,8 @@ angular.module('tzdateTime.zonePicker', [])
 
                 $scope.selectedZone = index;
 
+                console.log(zone)
+
                 $scope.model.utcOffset(zone);
                 $scope.model.hour(hour);
                 $scope.model.day(day);
@@ -111,10 +112,12 @@ angular.module('tzdateTime.zonePicker', [])
                 $scope.showTimePicker = false;
             }
 
-            $scope.displayValue();
+            $scope.selectZone($scope.zone);
+            //$scope.displayValue();
         }],
         scope: {
             model: '=model',
+            zone: '=zone',
             minDate: '=minDate'
         }
     };
