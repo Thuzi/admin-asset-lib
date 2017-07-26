@@ -31,7 +31,6 @@ angular.module('tzdateTime.zonePicker', [])
                 { label: 'MSK - Moscow Standard Time (+03:00)', value: '+03:00'},
                 { label: 'SAST - South Africa Standard Time (+02:00)', value: '+02:00'},
                 { label: 'EET - Eastern European Time (+02:00)', value: '+02:00'},
-                { label: 'UTC - Coordinated Universal Time (+00:00)', value: '+00:00'},
                 { label: 'BRT - Brasilia Time (-03:00)', value: '-03:00'},
                 { label: 'ART - Argentina Time (-03:00)', value: '-03:00'},
                 { label: 'EDT - Eastern Daylight Time (-04:00)', value: '-04:00'},
